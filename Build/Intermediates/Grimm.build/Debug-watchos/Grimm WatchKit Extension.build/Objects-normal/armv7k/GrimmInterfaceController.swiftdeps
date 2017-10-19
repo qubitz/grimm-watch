@@ -1,0 +1,459 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "GrimmInterfaceController"
+provides-nominal:
+- "24Grimm_WatchKit_Extension0A19InterfaceControllerC"
+- "24Grimm_WatchKit_Extension0A19InterfaceControllerC10ExpressionV"
+provides-member:
+- ["24Grimm_WatchKit_Extension0A19InterfaceControllerC", ""]
+- ["24Grimm_WatchKit_Extension0A19InterfaceControllerC10ExpressionV", ""]
+provides-dynamic-lookup:
+- "actionTable"
+- "awake"
+- "narrationTable"
+- "navigationGroup"
+- "table"
+depends-top-level:
+- !private "-"
+- !private "..<"
+- !private "Action"
+- !private "Array"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- !private "Chronicle"
+- !private "Dialogue"
+- "GrimmInterfaceController"
+- "Int"
+- !private "Response"
+- "String"
+- !private "StringLiteralType"
+- "WKInterfaceController"
+- "WKInterfaceGroup"
+- "WKInterfaceTable"
+- !private "~="
+depends-member:
+- !private ["24Grimm_WatchKit_Extension6ActionC", "actionLabel"]
+- !private ["Sa", "count"]
+- !private ["Sa", "subscript"]
+- !private ["s10ArraySliceV", "speech"]
+- !private ["s23BidirectionalCollectionP", "count"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "speech"]
+- !private ["s23BidirectionalCollectionP", "subscript"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "Expression"]
+- !private ["s7CVarArgP", "actionContent"]
+- !private ["s7CVarArgP", "actionLabel"]
+- !private ["s7CVarArgP", "actionTable"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "insertRows"]
+- !private ["s7CVarArgP", "narrateLabel"]
+- !private ["s7CVarArgP", "narrationContent"]
+- !private ["s7CVarArgP", "narrationTable"]
+- !private ["s7CVarArgP", "numberOfRows"]
+- !private ["s7CVarArgP", "replyLabel"]
+- !private ["s7CVarArgP", "rowController"]
+- !private ["s7CVarArgP", "scrollToRow"]
+- !private ["s7CVarArgP", "setNumberOfRows"]
+- !private ["s7CVarArgP", "setRowTypes"]
+- !private ["s7CVarArgP", "setText"]
+- !private ["s7CVarArgP", "speechLabel"]
+- !private ["s7CVarArgP", "subscript"]
+- ["s7CVarArgP", ""]
+- !private ["24Grimm_WatchKit_Extension9ChronicleC", "narrateLabel"]
+- !private ["s10CollectionP", "count"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "speech"]
+- !private ["s10CollectionP", "subscript"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "Expression"]
+- !private ["s28CustomDebugStringConvertibleP", "actionContent"]
+- !private ["s28CustomDebugStringConvertibleP", "actionLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "actionTable"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "insertRows"]
+- !private ["s28CustomDebugStringConvertibleP", "narrateLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "narrationContent"]
+- !private ["s28CustomDebugStringConvertibleP", "narrationTable"]
+- !private ["s28CustomDebugStringConvertibleP", "numberOfRows"]
+- !private ["s28CustomDebugStringConvertibleP", "replyLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "rowController"]
+- !private ["s28CustomDebugStringConvertibleP", "scrollToRow"]
+- !private ["s28CustomDebugStringConvertibleP", "setNumberOfRows"]
+- !private ["s28CustomDebugStringConvertibleP", "setRowTypes"]
+- !private ["s28CustomDebugStringConvertibleP", "setText"]
+- !private ["s28CustomDebugStringConvertibleP", "speech"]
+- !private ["s28CustomDebugStringConvertibleP", "speechLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "speech"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "Expression"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "actionContent"]
+- !private ["s23CustomStringConvertibleP", "actionLabel"]
+- !private ["s23CustomStringConvertibleP", "actionTable"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "insertRows"]
+- !private ["s23CustomStringConvertibleP", "narrateLabel"]
+- !private ["s23CustomStringConvertibleP", "narrationContent"]
+- !private ["s23CustomStringConvertibleP", "narrationTable"]
+- !private ["s23CustomStringConvertibleP", "numberOfRows"]
+- !private ["s23CustomStringConvertibleP", "replyLabel"]
+- !private ["s23CustomStringConvertibleP", "rowController"]
+- !private ["s23CustomStringConvertibleP", "scrollToRow"]
+- !private ["s23CustomStringConvertibleP", "setNumberOfRows"]
+- !private ["s23CustomStringConvertibleP", "setRowTypes"]
+- !private ["s23CustomStringConvertibleP", "setText"]
+- !private ["s23CustomStringConvertibleP", "speech"]
+- !private ["s23CustomStringConvertibleP", "speechLabel"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "count"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["24Grimm_WatchKit_Extension8DialogueC", "speechLabel"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "count"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "subscript"]
+- !private ["s9EquatableP", "Expression"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "actionContent"]
+- !private ["s9EquatableP", "actionLabel"]
+- !private ["s9EquatableP", "actionTable"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "insertRows"]
+- !private ["s9EquatableP", "narrateLabel"]
+- !private ["s9EquatableP", "narrationContent"]
+- !private ["s9EquatableP", "narrationTable"]
+- !private ["s9EquatableP", "numberOfRows"]
+- !private ["s9EquatableP", "replyLabel"]
+- !private ["s9EquatableP", "rowController"]
+- !private ["s9EquatableP", "scrollToRow"]
+- !private ["s9EquatableP", "setNumberOfRows"]
+- !private ["s9EquatableP", "setRowTypes"]
+- !private ["s9EquatableP", "setText"]
+- !private ["s9EquatableP", "speechLabel"]
+- ["s9EquatableP", ""]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "speech"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["24Grimm_WatchKit_Extension0A19InterfaceControllerC10ExpressionV", "String"]
+- ["24Grimm_WatchKit_Extension0A19InterfaceControllerC10ExpressionV", "init"]
+- ["24Grimm_WatchKit_Extension0A19InterfaceControllerC10ExpressionV", "speaker"]
+- ["24Grimm_WatchKit_Extension0A19InterfaceControllerC10ExpressionV", "speech"]
+- !private ["24Grimm_WatchKit_Extension0A19InterfaceControllerC", "Action"]
+- !private ["24Grimm_WatchKit_Extension0A19InterfaceControllerC", "Chronicle"]
+- !private ["24Grimm_WatchKit_Extension0A19InterfaceControllerC", "Dialogue"]
+- ["24Grimm_WatchKit_Extension0A19InterfaceControllerC", "Expression"]
+- ["24Grimm_WatchKit_Extension0A19InterfaceControllerC", "Int"]
+- !private ["24Grimm_WatchKit_Extension0A19InterfaceControllerC", "Response"]
+- ["24Grimm_WatchKit_Extension0A19InterfaceControllerC", "String"]
+- ["24Grimm_WatchKit_Extension0A19InterfaceControllerC", "WKInterfaceGroup"]
+- ["24Grimm_WatchKit_Extension0A19InterfaceControllerC", "WKInterfaceTable"]
+- ["24Grimm_WatchKit_Extension0A19InterfaceControllerC", "actionContent"]
+- ["24Grimm_WatchKit_Extension0A19InterfaceControllerC", "actionTable"]
+- ["24Grimm_WatchKit_Extension0A19InterfaceControllerC", "awake"]
+- ["24Grimm_WatchKit_Extension0A19InterfaceControllerC", "deinit"]
+- ["24Grimm_WatchKit_Extension0A19InterfaceControllerC", "init"]
+- ["24Grimm_WatchKit_Extension0A19InterfaceControllerC", "narrationContent"]
+- ["24Grimm_WatchKit_Extension0A19InterfaceControllerC", "narrationTable"]
+- ["24Grimm_WatchKit_Extension0A19InterfaceControllerC", "navigationGroup"]
+- ["24Grimm_WatchKit_Extension0A19InterfaceControllerC", "table"]
+- !private ["s8HashableP", "Expression"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "actionContent"]
+- !private ["s8HashableP", "actionLabel"]
+- !private ["s8HashableP", "actionTable"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "insertRows"]
+- !private ["s8HashableP", "narrateLabel"]
+- !private ["s8HashableP", "narrationContent"]
+- !private ["s8HashableP", "narrationTable"]
+- !private ["s8HashableP", "numberOfRows"]
+- !private ["s8HashableP", "replyLabel"]
+- !private ["s8HashableP", "rowController"]
+- !private ["s8HashableP", "scrollToRow"]
+- !private ["s8HashableP", "setNumberOfRows"]
+- !private ["s8HashableP", "setRowTypes"]
+- !private ["s8HashableP", "setText"]
+- !private ["s8HashableP", "speechLabel"]
+- ["s8HashableP", ""]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s17MutableCollectionP", "count"]
+- !private ["s17MutableCollectionP", "speech"]
+- !private ["s17MutableCollectionP", "subscript"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "init"]
+- !private ["So8NSObjectC", "Action"]
+- !private ["So8NSObjectC", "Chronicle"]
+- !private ["So8NSObjectC", "Dialogue"]
+- ["So8NSObjectC", "Expression"]
+- ["So8NSObjectC", "Int"]
+- !private ["So8NSObjectC", "Response"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "WKInterfaceGroup"]
+- ["So8NSObjectC", "WKInterfaceTable"]
+- ["So8NSObjectC", "actionContent"]
+- !private ["So8NSObjectC", "actionLabel"]
+- ["So8NSObjectC", "actionTable"]
+- ["So8NSObjectC", "awake"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "insertRows"]
+- !private ["So8NSObjectC", "narrateLabel"]
+- ["So8NSObjectC", "narrationContent"]
+- ["So8NSObjectC", "narrationTable"]
+- ["So8NSObjectC", "navigationGroup"]
+- !private ["So8NSObjectC", "numberOfRows"]
+- !private ["So8NSObjectC", "replyLabel"]
+- !private ["So8NSObjectC", "rowController"]
+- !private ["So8NSObjectC", "scrollToRow"]
+- !private ["So8NSObjectC", "setNumberOfRows"]
+- !private ["So8NSObjectC", "setRowTypes"]
+- !private ["So8NSObjectC", "setText"]
+- !private ["So8NSObjectC", "speechLabel"]
+- ["So8NSObjectC", "table"]
+- !private ["So16NSObjectProtocolP", "Expression"]
+- !private ["So16NSObjectProtocolP", "actionContent"]
+- !private ["So16NSObjectProtocolP", "actionLabel"]
+- !private ["So16NSObjectProtocolP", "actionTable"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "insertRows"]
+- !private ["So16NSObjectProtocolP", "narrateLabel"]
+- !private ["So16NSObjectProtocolP", "narrationContent"]
+- !private ["So16NSObjectProtocolP", "narrationTable"]
+- !private ["So16NSObjectProtocolP", "numberOfRows"]
+- !private ["So16NSObjectProtocolP", "replyLabel"]
+- !private ["So16NSObjectProtocolP", "rowController"]
+- !private ["So16NSObjectProtocolP", "scrollToRow"]
+- !private ["So16NSObjectProtocolP", "setNumberOfRows"]
+- !private ["So16NSObjectProtocolP", "setRowTypes"]
+- !private ["So16NSObjectProtocolP", "setText"]
+- !private ["So16NSObjectProtocolP", "speechLabel"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So8NSStringC", "init"]
+- !private ["s22RandomAccessCollectionP", "count"]
+- !private ["s22RandomAccessCollectionP", "speech"]
+- !private ["s22RandomAccessCollectionP", "subscript"]
+- !private ["s26RangeReplaceableCollectionP", "count"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "speech"]
+- !private ["s26RangeReplaceableCollectionP", "subscript"]
+- !private ["24Grimm_WatchKit_Extension8ResponseC", "replyLabel"]
+- !private ["s8SequenceP", "count"]
+- !private ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "speech"]
+- !private ["s8SequenceP", "subscript"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So21WKInterfaceControllerC", "Action"]
+- !private ["So21WKInterfaceControllerC", "Chronicle"]
+- !private ["So21WKInterfaceControllerC", "Dialogue"]
+- ["So21WKInterfaceControllerC", "Expression"]
+- ["So21WKInterfaceControllerC", "Int"]
+- !private ["So21WKInterfaceControllerC", "Response"]
+- ["So21WKInterfaceControllerC", "String"]
+- ["So21WKInterfaceControllerC", "WKInterfaceGroup"]
+- ["So21WKInterfaceControllerC", "WKInterfaceTable"]
+- ["So21WKInterfaceControllerC", "actionContent"]
+- ["So21WKInterfaceControllerC", "actionTable"]
+- ["So21WKInterfaceControllerC", "awake"]
+- ["So21WKInterfaceControllerC", "init"]
+- ["So21WKInterfaceControllerC", "narrationContent"]
+- ["So21WKInterfaceControllerC", "narrationTable"]
+- ["So21WKInterfaceControllerC", "navigationGroup"]
+- ["So21WKInterfaceControllerC", "table"]
+- ["So21WKInterfaceControllerC", ""]
+- !private ["So16WKInterfaceLabelC", "setText"]
+- !private ["So17WKInterfaceObjectC", "insertRows"]
+- !private ["So17WKInterfaceObjectC", "numberOfRows"]
+- !private ["So17WKInterfaceObjectC", "rowController"]
+- !private ["So17WKInterfaceObjectC", "scrollToRow"]
+- !private ["So17WKInterfaceObjectC", "setNumberOfRows"]
+- !private ["So17WKInterfaceObjectC", "setRowTypes"]
+- !private ["So17WKInterfaceObjectC", "setText"]
+- !private ["So16WKInterfaceTableC", "insertRows"]
+- !private ["So16WKInterfaceTableC", "numberOfRows"]
+- !private ["So16WKInterfaceTableC", "rowController"]
+- !private ["So16WKInterfaceTableC", "scrollToRow"]
+- !private ["So16WKInterfaceTableC", "setNumberOfRows"]
+- !private ["So16WKInterfaceTableC", "setRowTypes"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "speech"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s23_BidirectionalIndexableP", "count"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s23_BidirectionalIndexableP", "speech"]
+- !private ["s23_BidirectionalIndexableP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "speech"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "count"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s10_IndexableP", "speech"]
+- !private ["s10_IndexableP", "subscript"]
+- !private ["s14_IndexableBaseP", "count"]
+- !private ["s14_IndexableBaseP", "init"]
+- !private ["s14_IndexableBaseP", "speech"]
+- !private ["s14_IndexableBaseP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Expression"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "actionContent"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "actionLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "actionTable"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "insertRows"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "narrateLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "narrationContent"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "narrationTable"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "numberOfRows"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "replyLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "rowController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scrollToRow"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setNumberOfRows"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setRowTypes"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setText"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "speechLabel"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s17_MutableIndexableP", "count"]
+- !private ["s17_MutableIndexableP", "speech"]
+- !private ["s17_MutableIndexableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s22_RandomAccessIndexableP", "count"]
+- !private ["s22_RandomAccessIndexableP", "speech"]
+- !private ["s22_RandomAccessIndexableP", "subscript"]
+- !private ["s26_RangeReplaceableIndexableP", "count"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "speech"]
+- !private ["s26_RangeReplaceableIndexableP", "subscript"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "24Grimm_WatchKit_Extension6ActionC"
+- !private "Sa"
+- !private "s10ArraySliceV"
+- !private "s23BidirectionalCollectionP"
+- !private "Sb"
+- "s7CVarArgP"
+- !private "24Grimm_WatchKit_Extension9ChronicleC"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "24Grimm_WatchKit_Extension8DialogueC"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "24Grimm_WatchKit_Extension0A19InterfaceControllerC10ExpressionV"
+- "24Grimm_WatchKit_Extension0A19InterfaceControllerC"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "s17MutableCollectionP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "s22RandomAccessCollectionP"
+- !private "s26RangeReplaceableCollectionP"
+- !private "24Grimm_WatchKit_Extension8ResponseC"
+- !private "s8SequenceP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- "So21WKInterfaceControllerC"
+- !private "So16WKInterfaceLabelC"
+- !private "So17WKInterfaceObjectC"
+- !private "So16WKInterfaceTableC"
+- !private "s14_ArrayProtocolP"
+- !private "s23_BidirectionalIndexableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s17_MutableIndexableP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s22_RandomAccessIndexableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/HomeKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/SceneKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/WatchKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/MapKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/armv7k/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.0.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.0.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.0.sdk/System/Library/Frameworks/HomeKit.framework/Headers/HomeKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.0.sdk/System/Library/Frameworks/SceneKit.framework/Headers/SceneKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.0.sdk/System/Library/Frameworks/WatchKit.framework/Headers/WatchKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.0.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "391aed4c33f75bbef0c3b8c023641b36"

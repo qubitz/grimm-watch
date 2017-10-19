@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA09BB161F7A310000C4C7A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA09BB151F7A310000C4C7A6 /* AppDelegate.swift */; };
+		EA09BB181F7A310000C4C7A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA09BB171F7A310000C4C7A6 /* ViewController.swift */; };
+		EA09BB1B1F7A310000C4C7A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA09BB191F7A310000C4C7A6 /* Main.storyboard */; };
+		EA09BB1D1F7A310000C4C7A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA09BB1C1F7A310000C4C7A6 /* Assets.xcassets */; };
+		EA09BB201F7A310000C4C7A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA09BB1E1F7A310000C4C7A6 /* LaunchScreen.storyboard */; };
+		EA09BB251F7A310000C4C7A6 /* Grimm WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EA09BB241F7A310000C4C7A6 /* Grimm WatchKit App.app */; };
+		EA09BB2B1F7A310000C4C7A6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA09BB291F7A310000C4C7A6 /* Interface.storyboard */; };
+		EA09BB2D1F7A310000C4C7A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA09BB2C1F7A310000C4C7A6 /* Assets.xcassets */; };
+		EA09BB341F7A310100C4C7A6 /* Grimm WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EA09BB331F7A310100C4C7A6 /* Grimm WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EA09BB391F7A310100C4C7A6 /* GrimmInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA09BB381F7A310100C4C7A6 /* GrimmInterfaceController.swift */; };
+		EA09BB3B1F7A310100C4C7A6 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA09BB3A1F7A310100C4C7A6 /* ExtensionDelegate.swift */; };
+		EA09BB3D1F7A310100C4C7A6 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA09BB3C1F7A310100C4C7A6 /* NotificationController.swift */; };
+		EA09BB3F1F7A310100C4C7A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA09BB3E1F7A310100C4C7A6 /* Assets.xcassets */; };
+		EA09BB541F7A553700C4C7A6 /* EventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA09BB531F7A553700C4C7A6 /* EventRow.swift */; };
+		EA189BDC1F9847C700DC7E76 /* ActionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA189BDB1F9847C700DC7E76 /* ActionRow.swift */; };
+		EA189BDE1F985D6B00DC7E76 /* GrimmStoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA189BDD1F985D6B00DC7E76 /* GrimmStoryController.swift */; };
+		EA1B11231F8F1E1C00F93024 /* ItemInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1B11221F8F1E1C00F93024 /* ItemInterfaceController.swift */; };
+		EA1B11251F8F54B000F93024 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1B11241F8F54B000F93024 /* Item.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA09BB261F7A310000C4C7A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA09BB0A1F7A310000C4C7A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA09BB231F7A310000C4C7A6;
+			remoteInfo = "Grimm WatchKit App";
+		};
+		EA09BB351F7A310100C4C7A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA09BB0A1F7A310000C4C7A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA09BB321F7A310100C4C7A6;
+			remoteInfo = "Grimm WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EA09BB471F7A310100C4C7A6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EA09BB341F7A310100C4C7A6 /* Grimm WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA09BB4B1F7A310100C4C7A6 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EA09BB251F7A310000C4C7A6 /* Grimm WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EA09BB121F7A310000C4C7A6 /* Grimm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grimm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA09BB151F7A310000C4C7A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA09BB171F7A310000C4C7A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA09BB1A1F7A310000C4C7A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA09BB1C1F7A310000C4C7A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA09BB1F1F7A310000C4C7A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA09BB211F7A310000C4C7A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA09BB241F7A310000C4C7A6 /* Grimm WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grimm WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA09BB2A1F7A310000C4C7A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		EA09BB2C1F7A310000C4C7A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA09BB2E1F7A310000C4C7A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA09BB331F7A310100C4C7A6 /* Grimm WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Grimm WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA09BB381F7A310100C4C7A6 /* GrimmInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrimmInterfaceController.swift; sourceTree = "<group>"; };
+		EA09BB3A1F7A310100C4C7A6 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		EA09BB3C1F7A310100C4C7A6 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		EA09BB3E1F7A310100C4C7A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA09BB401F7A310100C4C7A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA09BB411F7A310100C4C7A6 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		EA09BB531F7A553700C4C7A6 /* EventRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRow.swift; sourceTree = "<group>"; };
+		EA189BDB1F9847C700DC7E76 /* ActionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRow.swift; sourceTree = "<group>"; };
+		EA189BDD1F985D6B00DC7E76 /* GrimmStoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrimmStoryController.swift; sourceTree = "<group>"; };
+		EA1B11221F8F1E1C00F93024 /* ItemInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInterfaceController.swift; sourceTree = "<group>"; };
+		EA1B11241F8F54B000F93024 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA09BB0F1F7A310000C4C7A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA09BB301F7A310100C4C7A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA09BB091F7A310000C4C7A6 = {
+			isa = PBXGroup;
+			children = (
+				EA09BB141F7A310000C4C7A6 /* Grimm */,
+				EA09BB281F7A310000C4C7A6 /* Grimm WatchKit App */,
+				EA09BB371F7A310100C4C7A6 /* Grimm WatchKit Extension */,
+				EA09BB131F7A310000C4C7A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA09BB131F7A310000C4C7A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA09BB121F7A310000C4C7A6 /* Grimm.app */,
+				EA09BB241F7A310000C4C7A6 /* Grimm WatchKit App.app */,
+				EA09BB331F7A310100C4C7A6 /* Grimm WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA09BB141F7A310000C4C7A6 /* Grimm */ = {
+			isa = PBXGroup;
+			children = (
+				EA09BB151F7A310000C4C7A6 /* AppDelegate.swift */,
+				EA09BB171F7A310000C4C7A6 /* ViewController.swift */,
+				EA09BB191F7A310000C4C7A6 /* Main.storyboard */,
+				EA09BB1C1F7A310000C4C7A6 /* Assets.xcassets */,
+				EA09BB1E1F7A310000C4C7A6 /* LaunchScreen.storyboard */,
+				EA09BB211F7A310000C4C7A6 /* Info.plist */,
+			);
+			path = Grimm;
+			sourceTree = "<group>";
+		};
+		EA09BB281F7A310000C4C7A6 /* Grimm WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				EA09BB291F7A310000C4C7A6 /* Interface.storyboard */,
+				EA09BB2C1F7A310000C4C7A6 /* Assets.xcassets */,
+				EA09BB2E1F7A310000C4C7A6 /* Info.plist */,
+			);
+			path = "Grimm WatchKit App";
+			sourceTree = "<group>";
+		};
+		EA09BB371F7A310100C4C7A6 /* Grimm WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EA09BB381F7A310100C4C7A6 /* GrimmInterfaceController.swift */,
+				EA1B11221F8F1E1C00F93024 /* ItemInterfaceController.swift */,
+				EA189BDD1F985D6B00DC7E76 /* GrimmStoryController.swift */,
+				EA09BB531F7A553700C4C7A6 /* EventRow.swift */,
+				EA189BDB1F9847C700DC7E76 /* ActionRow.swift */,
+				EA1B11241F8F54B000F93024 /* Item.swift */,
+				EA09BB3A1F7A310100C4C7A6 /* ExtensionDelegate.swift */,
+				EA09BB3C1F7A310100C4C7A6 /* NotificationController.swift */,
+				EA09BB3E1F7A310100C4C7A6 /* Assets.xcassets */,
+				EA09BB401F7A310100C4C7A6 /* Info.plist */,
+				EA09BB411F7A310100C4C7A6 /* PushNotificationPayload.apns */,
+			);
+			path = "Grimm WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA09BB111F7A310000C4C7A6 /* Grimm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA09BB4C1F7A310100C4C7A6 /* Build configuration list for PBXNativeTarget "Grimm" */;
+			buildPhases = (
+				EA09BB0E1F7A310000C4C7A6 /* Sources */,
+				EA09BB0F1F7A310000C4C7A6 /* Frameworks */,
+				EA09BB101F7A310000C4C7A6 /* Resources */,
+				EA09BB4B1F7A310100C4C7A6 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA09BB271F7A310000C4C7A6 /* PBXTargetDependency */,
+			);
+			name = Grimm;
+			productName = Grimm;
+			productReference = EA09BB121F7A310000C4C7A6 /* Grimm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA09BB231F7A310000C4C7A6 /* Grimm WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA09BB481F7A310100C4C7A6 /* Build configuration list for PBXNativeTarget "Grimm WatchKit App" */;
+			buildPhases = (
+				EA09BB221F7A310000C4C7A6 /* Resources */,
+				EA09BB471F7A310100C4C7A6 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA09BB361F7A310100C4C7A6 /* PBXTargetDependency */,
+			);
+			name = "Grimm WatchKit App";
+			productName = "Grimm WatchKit App";
+			productReference = EA09BB241F7A310000C4C7A6 /* Grimm WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		EA09BB321F7A310100C4C7A6 /* Grimm WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA09BB441F7A310100C4C7A6 /* Build configuration list for PBXNativeTarget "Grimm WatchKit Extension" */;
+			buildPhases = (
+				EA09BB2F1F7A310100C4C7A6 /* Sources */,
+				EA09BB301F7A310100C4C7A6 /* Frameworks */,
+				EA09BB311F7A310100C4C7A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Grimm WatchKit Extension";
+			productName = "Grimm WatchKit Extension";
+			productReference = EA09BB331F7A310100C4C7A6 /* Grimm WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA09BB0A1F7A310000C4C7A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Tyler Goffinet";
+				TargetAttributes = {
+					EA09BB111F7A310000C4C7A6 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					EA09BB231F7A310000C4C7A6 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					EA09BB321F7A310100C4C7A6 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EA09BB0D1F7A310000C4C7A6 /* Build configuration list for PBXProject "Grimm" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA09BB091F7A310000C4C7A6;
+			productRefGroup = EA09BB131F7A310000C4C7A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA09BB111F7A310000C4C7A6 /* Grimm */,
+				EA09BB231F7A310000C4C7A6 /* Grimm WatchKit App */,
+				EA09BB321F7A310100C4C7A6 /* Grimm WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA09BB101F7A310000C4C7A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA09BB201F7A310000C4C7A6 /* LaunchScreen.storyboard in Resources */,
+				EA09BB1D1F7A310000C4C7A6 /* Assets.xcassets in Resources */,
+				EA09BB1B1F7A310000C4C7A6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA09BB221F7A310000C4C7A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA09BB2D1F7A310000C4C7A6 /* Assets.xcassets in Resources */,
+				EA09BB2B1F7A310000C4C7A6 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA09BB311F7A310100C4C7A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA09BB3F1F7A310100C4C7A6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA09BB0E1F7A310000C4C7A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA09BB181F7A310000C4C7A6 /* ViewController.swift in Sources */,
+				EA09BB161F7A310000C4C7A6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA09BB2F1F7A310100C4C7A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA09BB3D1F7A310100C4C7A6 /* NotificationController.swift in Sources */,
+				EA1B11251F8F54B000F93024 /* Item.swift in Sources */,
+				EA1B11231F8F1E1C00F93024 /* ItemInterfaceController.swift in Sources */,
+				EA189BDC1F9847C700DC7E76 /* ActionRow.swift in Sources */,
+				EA09BB3B1F7A310100C4C7A6 /* ExtensionDelegate.swift in Sources */,
+				EA09BB391F7A310100C4C7A6 /* GrimmInterfaceController.swift in Sources */,
+				EA189BDE1F985D6B00DC7E76 /* GrimmStoryController.swift in Sources */,
+				EA09BB541F7A553700C4C7A6 /* EventRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA09BB271F7A310000C4C7A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA09BB231F7A310000C4C7A6 /* Grimm WatchKit App */;
+			targetProxy = EA09BB261F7A310000C4C7A6 /* PBXContainerItemProxy */;
+		};
+		EA09BB361F7A310100C4C7A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA09BB321F7A310100C4C7A6 /* Grimm WatchKit Extension */;
+			targetProxy = EA09BB351F7A310100C4C7A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA09BB191F7A310000C4C7A6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA09BB1A1F7A310000C4C7A6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA09BB1E1F7A310000C4C7A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA09BB1F1F7A310000C4C7A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EA09BB291F7A310000C4C7A6 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA09BB2A1F7A310000C4C7A6 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA09BB421F7A310100C4C7A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA09BB431F7A310100C4C7A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA09BB451F7A310100C4C7A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3L9B2A7EV3;
+				INFOPLIST_FILE = "Grimm WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tylergoffinet.Grimm.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		EA09BB461F7A310100C4C7A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3L9B2A7EV3;
+				INFOPLIST_FILE = "Grimm WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tylergoffinet.Grimm.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		EA09BB491F7A310100C4C7A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3L9B2A7EV3;
+				IBSC_MODULE = Grimm_WatchKit_Extension;
+				INFOPLIST_FILE = "Grimm WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tylergoffinet.Grimm.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		EA09BB4A1F7A310100C4C7A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3L9B2A7EV3;
+				IBSC_MODULE = Grimm_WatchKit_Extension;
+				INFOPLIST_FILE = "Grimm WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tylergoffinet.Grimm.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		EA09BB4D1F7A310100C4C7A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3L9B2A7EV3;
+				INFOPLIST_FILE = Grimm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tylergoffinet.Grimm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA09BB4E1F7A310100C4C7A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3L9B2A7EV3;
+				INFOPLIST_FILE = Grimm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tylergoffinet.Grimm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA09BB0D1F7A310000C4C7A6 /* Build configuration list for PBXProject "Grimm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA09BB421F7A310100C4C7A6 /* Debug */,
+				EA09BB431F7A310100C4C7A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA09BB441F7A310100C4C7A6 /* Build configuration list for PBXNativeTarget "Grimm WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA09BB451F7A310100C4C7A6 /* Debug */,
+				EA09BB461F7A310100C4C7A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA09BB481F7A310100C4C7A6 /* Build configuration list for PBXNativeTarget "Grimm WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA09BB491F7A310100C4C7A6 /* Debug */,
+				EA09BB4A1F7A310100C4C7A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA09BB4C1F7A310100C4C7A6 /* Build configuration list for PBXNativeTarget "Grimm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA09BB4D1F7A310100C4C7A6 /* Debug */,
+				EA09BB4E1F7A310100C4C7A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA09BB0A1F7A310000C4C7A6 /* Project object */;
+}

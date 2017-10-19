@@ -1,0 +1,268 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "EventRow"
+provides-nominal:
+- "24Grimm_WatchKit_Extension8EventRowC"
+provides-member:
+- ["24Grimm_WatchKit_Extension8EventRowC", ""]
+provides-dynamic-lookup:
+- "group"
+- "speechLabel"
+depends-top-level:
+- "AssignmentPrecedence"
+- !private "Dictionary"
+- "EventRow"
+- "Expression"
+- "FloatLiteralType"
+- "IntegerLiteralType"
+- "NSAttributedString"
+- !private "NSAttributedStringKey"
+- !private "NSMutableParagraphStyle"
+- "NSObject"
+- "NSTextAlignment"
+- "String"
+- "WKInterfaceGroup"
+- "WKInterfaceLabel"
+- "_ColorLiteralType"
+depends-member:
+- !private ["s7CVarArgP", "NSAttributedString"]
+- !private ["s7CVarArgP", "NSAttributedStringKey"]
+- !private ["s7CVarArgP", "NSMutableParagraphStyle"]
+- !private ["s7CVarArgP", "alignment"]
+- !private ["s7CVarArgP", "dialogueColor"]
+- !private ["s7CVarArgP", "getAligned"]
+- !private ["s7CVarArgP", "group"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "narrationColor"]
+- !private ["s7CVarArgP", "responseColor"]
+- !private ["s7CVarArgP", "setAttributedText"]
+- !private ["s7CVarArgP", "setBackgroundColor"]
+- !private ["s7CVarArgP", "speechLabel"]
+- ["s7CVarArgP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "NSAttributedString"]
+- !private ["s28CustomDebugStringConvertibleP", "NSAttributedStringKey"]
+- !private ["s28CustomDebugStringConvertibleP", "NSMutableParagraphStyle"]
+- !private ["s28CustomDebugStringConvertibleP", "alignment"]
+- !private ["s28CustomDebugStringConvertibleP", "dialogueColor"]
+- !private ["s28CustomDebugStringConvertibleP", "getAligned"]
+- !private ["s28CustomDebugStringConvertibleP", "group"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "narrationColor"]
+- !private ["s28CustomDebugStringConvertibleP", "responseColor"]
+- !private ["s28CustomDebugStringConvertibleP", "setAttributedText"]
+- !private ["s28CustomDebugStringConvertibleP", "setBackgroundColor"]
+- !private ["s28CustomDebugStringConvertibleP", "speechLabel"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "NSAttributedString"]
+- !private ["s23CustomStringConvertibleP", "NSAttributedStringKey"]
+- !private ["s23CustomStringConvertibleP", "NSMutableParagraphStyle"]
+- !private ["s23CustomStringConvertibleP", "alignment"]
+- !private ["s23CustomStringConvertibleP", "dialogueColor"]
+- !private ["s23CustomStringConvertibleP", "getAligned"]
+- !private ["s23CustomStringConvertibleP", "group"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "narrationColor"]
+- !private ["s23CustomStringConvertibleP", "responseColor"]
+- !private ["s23CustomStringConvertibleP", "setAttributedText"]
+- !private ["s23CustomStringConvertibleP", "setBackgroundColor"]
+- !private ["s23CustomStringConvertibleP", "speechLabel"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9EquatableP", "NSAttributedString"]
+- !private ["s9EquatableP", "NSAttributedStringKey"]
+- !private ["s9EquatableP", "NSMutableParagraphStyle"]
+- !private ["s9EquatableP", "alignment"]
+- !private ["s9EquatableP", "dialogueColor"]
+- !private ["s9EquatableP", "getAligned"]
+- !private ["s9EquatableP", "group"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "left"]
+- !private ["s9EquatableP", "narrationColor"]
+- ["s9EquatableP", "narrator"]
+- !private ["s9EquatableP", "paragraphStyle"]
+- !private ["s9EquatableP", "responseColor"]
+- !private ["s9EquatableP", "right"]
+- !private ["s9EquatableP", "setAttributedText"]
+- !private ["s9EquatableP", "setBackgroundColor"]
+- !private ["s9EquatableP", "speechLabel"]
+- ["s9EquatableP", "them"]
+- ["s9EquatableP", "you"]
+- ["s9EquatableP", ""]
+- ["24Grimm_WatchKit_Extension8EventRowC", "Expression"]
+- ["24Grimm_WatchKit_Extension8EventRowC", "NSAttributedString"]
+- !private ["24Grimm_WatchKit_Extension8EventRowC", "NSAttributedStringKey"]
+- !private ["24Grimm_WatchKit_Extension8EventRowC", "NSMutableParagraphStyle"]
+- ["24Grimm_WatchKit_Extension8EventRowC", "NSTextAlignment"]
+- ["24Grimm_WatchKit_Extension8EventRowC", "String"]
+- ["24Grimm_WatchKit_Extension8EventRowC", "WKInterfaceGroup"]
+- ["24Grimm_WatchKit_Extension8EventRowC", "WKInterfaceLabel"]
+- ["24Grimm_WatchKit_Extension8EventRowC", "deinit"]
+- ["24Grimm_WatchKit_Extension8EventRowC", "dialogueColor"]
+- ["24Grimm_WatchKit_Extension8EventRowC", "getAligned"]
+- ["24Grimm_WatchKit_Extension8EventRowC", "group"]
+- ["24Grimm_WatchKit_Extension8EventRowC", "init"]
+- ["24Grimm_WatchKit_Extension8EventRowC", "narrationColor"]
+- ["24Grimm_WatchKit_Extension8EventRowC", "responseColor"]
+- ["24Grimm_WatchKit_Extension8EventRowC", "speechLabel"]
+- ["24Grimm_WatchKit_Extension8EventRowC", "tailorRow"]
+- !private ["24Grimm_WatchKit_Extension10ExpressionV", "source"]
+- !private ["24Grimm_WatchKit_Extension10ExpressionV", "speech"]
+- !private ["s8HashableP", "NSAttributedString"]
+- !private ["s8HashableP", "NSAttributedStringKey"]
+- !private ["s8HashableP", "NSMutableParagraphStyle"]
+- !private ["s8HashableP", "alignment"]
+- !private ["s8HashableP", "dialogueColor"]
+- !private ["s8HashableP", "getAligned"]
+- !private ["s8HashableP", "group"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "left"]
+- !private ["s8HashableP", "narrationColor"]
+- ["s8HashableP", "narrator"]
+- !private ["s8HashableP", "paragraphStyle"]
+- !private ["s8HashableP", "responseColor"]
+- !private ["s8HashableP", "right"]
+- !private ["s8HashableP", "setAttributedText"]
+- !private ["s8HashableP", "setBackgroundColor"]
+- !private ["s8HashableP", "speechLabel"]
+- ["s8HashableP", "them"]
+- ["s8HashableP", "you"]
+- ["s8HashableP", ""]
+- !private ["So18NSAttributedStringC", "init"]
+- !private ["SC21NSAttributedStringKeyV", "paragraphStyle"]
+- !private ["So8NSCodingP", "alignment"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So9NSCopyingP", "alignment"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "alignment"]
+- !private ["So16NSMutableCopyingP", "init"]
+- !private ["So23NSMutableParagraphStyleC", "alignment"]
+- !private ["So23NSMutableParagraphStyleC", "init"]
+- ["So8NSObjectC", "Expression"]
+- ["So8NSObjectC", "NSAttributedString"]
+- !private ["So8NSObjectC", "NSAttributedStringKey"]
+- !private ["So8NSObjectC", "NSMutableParagraphStyle"]
+- ["So8NSObjectC", "NSTextAlignment"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "WKInterfaceGroup"]
+- ["So8NSObjectC", "WKInterfaceLabel"]
+- !private ["So8NSObjectC", "alignment"]
+- ["So8NSObjectC", "dialogueColor"]
+- ["So8NSObjectC", "getAligned"]
+- ["So8NSObjectC", "group"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "narrationColor"]
+- ["So8NSObjectC", "responseColor"]
+- !private ["So8NSObjectC", "setAttributedText"]
+- !private ["So8NSObjectC", "setBackgroundColor"]
+- ["So8NSObjectC", "speechLabel"]
+- ["So8NSObjectC", "tailorRow"]
+- ["So8NSObjectC", ""]
+- !private ["So16NSObjectProtocolP", "NSAttributedString"]
+- !private ["So16NSObjectProtocolP", "NSAttributedStringKey"]
+- !private ["So16NSObjectProtocolP", "NSMutableParagraphStyle"]
+- !private ["So16NSObjectProtocolP", "alignment"]
+- !private ["So16NSObjectProtocolP", "dialogueColor"]
+- !private ["So16NSObjectProtocolP", "getAligned"]
+- !private ["So16NSObjectProtocolP", "group"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "narrationColor"]
+- !private ["So16NSObjectProtocolP", "responseColor"]
+- !private ["So16NSObjectProtocolP", "setAttributedText"]
+- !private ["So16NSObjectProtocolP", "setBackgroundColor"]
+- !private ["So16NSObjectProtocolP", "speechLabel"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So16NSParagraphStyleC", "alignment"]
+- !private ["So16NSParagraphStyleC", "init"]
+- !private ["So14NSSecureCodingP", "alignment"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["SC15NSTextAlignmentO", "left"]
+- !private ["SC15NSTextAlignmentO", "right"]
+- !private ["s16RawRepresentableP", "left"]
+- !private ["s16RawRepresentableP", "paragraphStyle"]
+- !private ["s16RawRepresentableP", "right"]
+- ["24Grimm_WatchKit_Extension12SpeechSourceO", "narrator"]
+- ["24Grimm_WatchKit_Extension12SpeechSourceO", "them"]
+- ["24Grimm_WatchKit_Extension12SpeechSourceO", "you"]
+- !private ["So17WKImageAnimatableP", "setBackgroundColor"]
+- !private ["So16WKInterfaceGroupC", "setBackgroundColor"]
+- !private ["So16WKInterfaceLabelC", "setAttributedText"]
+- !private ["So17WKInterfaceObjectC", "setAttributedText"]
+- !private ["So17WKInterfaceObjectC", "setBackgroundColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSAttributedString"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSAttributedStringKey"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSMutableParagraphStyle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "alignment"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dialogueColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "getAligned"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "group"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "narrationColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "responseColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setAttributedText"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setBackgroundColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "speechLabel"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "paragraphStyle"]
+- !private ["s20_SwiftNewtypeWrapperP", "paragraphStyle"]
+depends-nominal:
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "s9EquatableP"
+- "24Grimm_WatchKit_Extension8EventRowC"
+- !private "24Grimm_WatchKit_Extension10ExpressionV"
+- "s8HashableP"
+- !private "So18NSAttributedStringC"
+- !private "SC21NSAttributedStringKeyV"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- !private "So23NSMutableParagraphStyleC"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So16NSParagraphStyleC"
+- !private "So14NSSecureCodingP"
+- !private "SC15NSTextAlignmentO"
+- !private "s16RawRepresentableP"
+- "24Grimm_WatchKit_Extension12SpeechSourceO"
+- !private "So17WKImageAnimatableP"
+- !private "So16WKInterfaceGroupC"
+- !private "So16WKInterfaceLabelC"
+- !private "So17WKInterfaceObjectC"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s20_SwiftNewtypeWrapperP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/HomeKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/SceneKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/WatchKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/MapKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchsimulator/i386/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/WatchSimulator.platform/Developer/SDKs/WatchSimulator4.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/WatchSimulator.platform/Developer/SDKs/WatchSimulator4.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/WatchSimulator.platform/Developer/SDKs/WatchSimulator4.0.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/WatchSimulator.platform/Developer/SDKs/WatchSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/WatchSimulator.platform/Developer/SDKs/WatchSimulator4.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/WatchSimulator.platform/Developer/SDKs/WatchSimulator4.0.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/WatchSimulator.platform/Developer/SDKs/WatchSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/WatchSimulator.platform/Developer/SDKs/WatchSimulator4.0.sdk/System/Library/Frameworks/HomeKit.framework/Headers/HomeKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/WatchSimulator.platform/Developer/SDKs/WatchSimulator4.0.sdk/System/Library/Frameworks/SceneKit.framework/Headers/SceneKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/WatchSimulator.platform/Developer/SDKs/WatchSimulator4.0.sdk/System/Library/Frameworks/WatchKit.framework/Headers/WatchKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/WatchSimulator.platform/Developer/SDKs/WatchSimulator4.0.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/WatchSimulator.platform/Developer/SDKs/WatchSimulator4.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "83fa37bf2779957af79ed1428213e3b5"
