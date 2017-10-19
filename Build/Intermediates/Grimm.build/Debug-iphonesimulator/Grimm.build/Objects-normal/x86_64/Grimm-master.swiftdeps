@@ -1,6 +1,0 @@
-version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
-options: "f31c60c517e5781f122dcafca86d5e80"
-build_time: [1506408850, 94260000]
-inputs:
-  "/Users/Tler/Documents/Source/Xcode Workspace/Apple Watch Apps/Grimm/Grimm/ViewController.swift": [1506408832, 0]
-  "/Users/Tler/Documents/Source/Xcode Workspace/Apple Watch Apps/Grimm/Grimm/AppDelegate.swift": [1506408832, 0]

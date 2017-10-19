@@ -18,8 +18,8 @@ func ==(lhs: Expression?, rhs: Expression?) -> Bool {
     return lhs?.source == rhs?.source && lhs?.speech == rhs?.speech
 }
 
-func !=(lsh: Expression?, rhs: Expression?) -> Bool {
-    return !(lsh == rhs)
+func !=(lhs: Expression?, rhs: Expression?) -> Bool {
+    return !(lhs == rhs)
 }
 
 enum SpeechSource {
