@@ -82,9 +82,12 @@ class GrimmInterfaceController: WKInterfaceController {
         super.table(table, didSelectRowAt: rowIndex)
         
         if table == actionTable {
-            deliverEvent(withExpression: Expression(source: .narrator,
-                                                    speech: actions[rowIndex]))
+//            deliverEvent(withExpression: Expression(source: .narrator,
+//                                                    speech: actions[rowIndex]))
+            GrimmStoryController.sharedInstance.notifyActionSelect(of: actions[rowIndex],
+                                                                   sender: self)
         }
+        
     }
     
     override func contextForSegue(withIdentifier segueIdentifier: String) -> Any? {

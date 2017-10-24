@@ -2,13 +2,16 @@
 //  Item.swift
 //  Grimm WatchKit Extension
 //
-//  Created by Tyler Goffinet on 10/12/17.
+//  Created by Tyler Goffinet on 10/23/17.
 //  Copyright © 2017 Tyler Goffinet. All rights reserved.
 //
 
-import WatchKit
+import Foundation
 
-class Item: NSObject {
-
-    @IBOutlet var itemLabel: WKInterfaceLabel!
+class Item: Codable {
+    var name: String!
+    
+    init(_ name: String) {
+        self.name = name
+    }
 }

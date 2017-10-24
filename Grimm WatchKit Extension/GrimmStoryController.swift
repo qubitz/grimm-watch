@@ -8,6 +8,17 @@
 
 import WatchKit
 
-class GrimmStoryController: NSObject {
+class GrimmStoryController {
+    static let sharedInstance = GrimmStoryController()
     
+    let map = Map()
+    
+    func notifyActionSelect(of action: String, sender: GrimmInterfaceController) {
+        
+        switch action {
+        case "Throw rock":
+            sender.deliverEvent(withExpression: Expression(source: .narrator, speech: "You threw "))
+        }
+        
+    }
 }

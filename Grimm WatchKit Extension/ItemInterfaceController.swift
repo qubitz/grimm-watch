@@ -21,7 +21,7 @@ class ItemInterfaceController: WKInterfaceController {
         itemTable.setNumberOfRows(items.count, withRowType: "Item")
         
         for index in 0..<items.count {
-            let row = itemTable.rowController(at: index) as! Item
+            let row = itemTable.rowController(at: index) as! ItemRow
             row.itemLabel.setText(items[index])
         }
     }

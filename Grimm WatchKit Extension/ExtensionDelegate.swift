@@ -9,9 +9,11 @@
 import WatchKit
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
-
+    
+    let storyController = GrimmStoryController.sharedInstance
+    
     func applicationDidFinishLaunching() {
-        // Perform any final initialization of your application.
+        
     }
 
     func applicationDidBecomeActive() {

@@ -5,7 +5,7 @@
     </device>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13051"/>
     </dependencies>
     <scenes>
@@ -73,7 +73,7 @@
                     <items>
                         <table alignment="left" id="rSM-0D-Yt8" userLabel="Item Table">
                             <items>
-                                <tableRow identifier="Item" id="QlG-Ky-jL6" userLabel="Item" customClass="Item" customModule="Grimm_WatchKit_Extension">
+                                <tableRow identifier="Item" id="QlG-Ky-jL6" userLabel="Item Row" customClass="ItemRow" customModule="Grimm_WatchKit_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="AJv-Z5-ZXy">
                                         <items>
                                             <label alignment="center" verticalAlignment="center" text="Sample item" textAlignment="center" numberOfLines="0" id="9Ab-a1-yVh">
