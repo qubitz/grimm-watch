@@ -68,7 +68,7 @@ class GrimmInterfaceController: WKInterfaceController {
                             Expression(source: .narrator, speech: "An awkward silence followed...")]
         
         eventHistory = sampleEvents
-        actions = ["Talk to guy", "Keep Walking", "Stop", "Run"]
+        actions = ["Throw rock", "Keep Walking", "Stop", "Run"]
     }
     
     override func awake(withContext context: Any?) {
@@ -84,6 +84,7 @@ class GrimmInterfaceController: WKInterfaceController {
         if table == actionTable {
 //            deliverEvent(withExpression: Expression(source: .narrator,
 //                                                    speech: actions[rowIndex]))
+            eventTable.scrollToRow(at: eventTable.numberOfRows - 1)
             GrimmStoryController.sharedInstance.notifyActionSelect(of: actions[rowIndex],
                                                                    sender: self)
         }
@@ -124,8 +125,6 @@ class GrimmInterfaceController: WKInterfaceController {
         eventTable.insertRows(at: [eventTable.numberOfRows], withRowType: "Event")
         let row = eventTable.rowController(at: eventTable.numberOfRows - 1) as! EventRow
         row.tailorRow(forExpressionOf: expr)
-        
-        eventTable.scrollToRow(at: eventTable.numberOfRows - 1)
     }
     
     func offerAvailActions(_ actions: [String]) {
