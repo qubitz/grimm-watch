@@ -10,12 +10,12 @@ import Foundation
 
 class Grid3D<T: Codable>: Codable {
     var grid = [[[T]]]()
-    
-    func setValue(x: Int, y: Int, z: Int, to value: T) {
-        grid[x][y][z] = value
+
+    func set(at point: Point, to value: T) {
+        grid[point.x][point.y][point.z] = value
     }
     
-    func setData(at point: (x: Int, y: Int, z: Int), to value: T) {
-        setValue(x: point.x, y: point.y, z: point.z, to: value)
+    func get(at point: Point) -> T {
+        return grid[point.x][point.y][point.z]
     }
 }

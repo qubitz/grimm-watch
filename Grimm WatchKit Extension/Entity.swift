@@ -10,9 +10,10 @@ import Foundation
 
 class Entity: Codable {
     var inventory = [Item]()
-    var location: Area
+    var location: WorldLocation
     
-    init(spawn: Area) {
-        location = spawn
+    init(spawnAt location: WorldLocation, with items: [Item]) {
+        self.location = location
+        self.inventory = items
     }
 }

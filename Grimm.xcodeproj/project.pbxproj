@@ -29,7 +29,7 @@
 		EADD6BEB1F9D4D820064A634 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADD6BEA1F9D4D820064A634 /* Region.swift */; };
 		EADD6BED1F9D6DDD0064A634 /* Grid3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADD6BEC1F9D6DDD0064A634 /* Grid3D.swift */; };
 		EADD6BEF1F9D70410064A634 /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADD6BEE1F9D70410064A634 /* Area.swift */; };
-		EADD6BF11F9F05CF0064A634 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADD6BF01F9F05CF0064A634 /* Item.swift */; };
+		EADD6BF11F9F05CF0064A634 /* SmallFries.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADD6BF01F9F05CF0064A634 /* SmallFries.swift */; };
 		EADD6BF31F9F29170064A634 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADD6BF21F9F29170064A634 /* Entity.swift */; };
 /* End PBXBuildFile section */
 
@@ -103,7 +103,7 @@
 		EADD6BEA1F9D4D820064A634 /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		EADD6BEC1F9D6DDD0064A634 /* Grid3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid3D.swift; sourceTree = "<group>"; };
 		EADD6BEE1F9D70410064A634 /* Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
-		EADD6BF01F9F05CF0064A634 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		EADD6BF01F9F05CF0064A634 /* SmallFries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallFries.swift; sourceTree = "<group>"; };
 		EADD6BF21F9F29170064A634 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -184,10 +184,10 @@
 				EA09BB411F7A310100C4C7A6 /* PushNotificationPayload.apns */,
 				EADD6BE81F9D4C8E0064A634 /* Map.swift */,
 				EADD6BEA1F9D4D820064A634 /* Region.swift */,
-				EADD6BF21F9F29170064A634 /* Entity.swift */,
 				EADD6BEE1F9D70410064A634 /* Area.swift */,
+				EADD6BF21F9F29170064A634 /* Entity.swift */,
 				EADD6BEC1F9D6DDD0064A634 /* Grid3D.swift */,
-				EADD6BF01F9F05CF0064A634 /* Item.swift */,
+				EADD6BF01F9F05CF0064A634 /* SmallFries.swift */,
 			);
 			path = "Grimm WatchKit Extension";
 			sourceTree = "<group>";
@@ -344,7 +344,7 @@
 				EA189BDC1F9847C700DC7E76 /* ActionRow.swift in Sources */,
 				EADD6BED1F9D6DDD0064A634 /* Grid3D.swift in Sources */,
 				EA09BB3B1F7A310100C4C7A6 /* ExtensionDelegate.swift in Sources */,
-				EADD6BF11F9F05CF0064A634 /* Item.swift in Sources */,
+				EADD6BF11F9F05CF0064A634 /* SmallFries.swift in Sources */,
 				EA09BB391F7A310100C4C7A6 /* GrimmInterfaceController.swift in Sources */,
 				EA189BDE1F985D6B00DC7E76 /* GrimmStoryController.swift in Sources */,
 				EADD6BE91F9D4C8E0064A634 /* Map.swift in Sources */,

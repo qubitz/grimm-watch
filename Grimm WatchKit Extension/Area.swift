@@ -11,12 +11,18 @@ import Foundation
 class Area: Codable {
     var description: String
     var inventory = [Item]()
+    var walls: [Direction]
     
-    init(withItems items: [String], andDesc desc: String) {
+    init(withItems items: [Item], andDesc desc: String, walls: [Direction] = []) {
         for (index, item) in items.enumerated() {
-            inventory[index] = Item(item)
+            inventory[index] = item
         }
         
         description = desc
+        self.walls = walls
+    }
+    
+    func areasAvail() -> [Direction] {
+        return Direction.invert(walls)
     }
 }

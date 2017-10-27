@@ -11,7 +11,19 @@ import Foundation
 class Map: Codable {
     let regions = Grid3D<Region>()
     
-    init() {
-        regions.setData(at: (0, 0, 0), to: Region())
+    func areasAvail(near location: WorldLocation) -> [Direction]{
+        return region(of: location).areasAvail(near: location)
+    }
+    
+    func regionsAvail(of location: WorldLocation) -> [Direction] {
+        return region(of: location).regionsAvail()
+    }
+    
+    func area(of location: WorldLocation) -> Area {
+        return region(of: location).area(of: location)
+    }
+    
+    func region(of location: WorldLocation) -> Region {
+        return regions.get(at: location.region)
     }
 }
