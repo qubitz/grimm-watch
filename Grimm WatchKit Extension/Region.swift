@@ -10,10 +10,10 @@ import Foundation
 
 class Region: Codable {
     let areas = Grid3D<Area>()
-    let walls: [Direction]
+    let routes: [Direction]
     
-    init(walls: [Direction] = []) {
-        self.walls = walls
+    init(routes: [Direction] = []) {
+        self.routes = routes
     }
     
     func areasAvail(near location: WorldLocation) -> [Direction] {
@@ -22,7 +22,7 @@ class Region: Codable {
     }
     
     func regionsAvail() -> [Direction] {
-        return Direction.invert(walls)
+        return Direction.invert(routes)
     }
     
     func area(of location: WorldLocation) -> Area {
