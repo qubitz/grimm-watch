@@ -194,11 +194,11 @@
 				EA09BB411F7A310100C4C7A6 /* PushNotificationPayload.apns */,
 				EA92D47B1FA3C578009C3677 /* MapHandler.swift */,
 				EA92D47D1FA3CF1D009C3677 /* MapBuilder.swift */,
+				EADD6BEC1F9D6DDD0064A634 /* Grid3D.swift */,
 				EADD6BE81F9D4C8E0064A634 /* Map.swift */,
 				EADD6BEA1F9D4D820064A634 /* Region.swift */,
 				EADD6BEE1F9D70410064A634 /* Area.swift */,
 				EADD6BF21F9F29170064A634 /* Entity.swift */,
-				EADD6BEC1F9D6DDD0064A634 /* Grid3D.swift */,
 				EADD6BF01F9F05CF0064A634 /* SmallFries.swift */,
 			);
 			path = "Grimm WatchKit Extension";

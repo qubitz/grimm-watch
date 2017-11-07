@@ -44,16 +44,30 @@ struct Vec3: Codable, CustomStringConvertible {
     }
 }
 
-func +(rhs: Vec3, lhs: Vec3) -> Vec3 {
+func +(lhs: Vec3, rhs: Vec3) -> Vec3 {
     return Vec3(rhs.x + lhs.x, rhs.y + lhs.y, rhs.z + lhs.z)
 }
 
-func +(rhs: Vec3, lhs: Point) -> Vec3 {
-    return rhs + Vec3(lhs.x, lhs.y, lhs.z)
+func +(lhs: Vec3, rhs: Point) -> Vec3 {
+    return lhs + Vec3(rhs.x, rhs.y, rhs.z)
 }
 
-func +=(rhs: inout Vec3, lhs: Point) {
-    rhs = rhs + Vec3(lhs.x, lhs.y, lhs.z)
+func +=(lhs: inout Vec3, rhs: Vec3) {
+    lhs = lhs + rhs
+}
+
+func +=(lhs: inout Vec3, rhs: Point) {
+    lhs = lhs + Vec3(rhs.x, rhs.y, rhs.z)
+}
+
+func ==(lhs: Vec3, rhs: Vec3) -> Bool {
+    return lhs.x == rhs.x &&
+           lhs.y == rhs.y &&
+           lhs.z == rhs.z
+}
+
+func !=(lhs: Vec3, rhs: Vec3) -> Bool {
+    return !(lhs == rhs)
 }
 
 struct WorldLocation: Codable {
@@ -71,12 +85,21 @@ struct WorldLocation: Codable {
     }
 }
 
+func ==(lhs: WorldLocation, rhs: WorldLocation) -> Bool {
+    return lhs.area == rhs.area &&
+           lhs.region == rhs.region
+}
+
+func !=(lhs: WorldLocation, rhs: WorldLocation) -> Bool {
+    return !(lhs == rhs)
+}
+
 enum Direction: String, Codable {
     case north, south, east, west, up, down
     
     static let all = [Direction.north, .east, .south, .west, .up, .down]
     
-    var raw: Vec3 {
+    var unitVec: Vec3 {
         switch self {
         case .north:
             return Vec3.forward

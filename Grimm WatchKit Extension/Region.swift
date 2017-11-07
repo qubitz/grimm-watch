@@ -26,22 +26,13 @@ class Region: Codable {
         self.map = parent
     }
     
-    func areasAvail(near location: WorldLocation) -> [Direction] {
-        let area = areas.get(at: location.area)
-        return area.areasAvail()
-    }
-    
-    func regionsAvail() -> [Direction] {
-        return Direction.invert(routes)
-    }
-    
     func area(of location: WorldLocation) -> Area {
         return areas.get(at: location.area)
     }
     
     // TODO: Reduce, reuse, recycle! Way too many params...
-    func makeArea(_ spawnDirection: Direction?, withItems items: [Item], andDesc desc: String, routes: [Direction] = Direction.all) -> Area {
-        cursor = (spawnDirection != nil) ? cursor + spawnDirection!.raw : cursor
+    func makeArea(_ spawnDirection: Direction?, withItems items: [Item] = [], andDesc desc: String, routes: [Direction] = Direction.all) -> Area {
+        cursor = (spawnDirection != nil) ? cursor + spawnDirection!.unitVec : cursor
         areas.set(at: cursor, to: Area(at: WorldLocation(inRegion: location, inArea: cursor),
                                        withItems: items, andDesc: desc,
                                        routes: routes, parent: self))

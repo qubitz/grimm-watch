@@ -16,14 +16,6 @@ class Map: Codable {
         cursor = Vec3(origin)
     }
     
-    func areasAvail(near location: WorldLocation) -> [Direction]{
-        return region(of: location).areasAvail(near: location)
-    }
-    
-    func regionsAvail(of location: WorldLocation) -> [Direction] {
-        return region(of: location).regionsAvail()
-    }
-    
     func area(of location: WorldLocation) -> Area {
         return region(of: location).area(of: location)
     }
@@ -33,7 +25,7 @@ class Map: Codable {
     }
     
     func makeRegion(_ spawnDirection: Direction?, withOrigin origin: Point, routes: [Direction] = Direction.all) -> Region {
-        cursor = (spawnDirection != nil) ? cursor : cursor + spawnDirection!.raw
+        cursor = (spawnDirection != nil) ? cursor + spawnDirection!.unitVec : cursor
         regions.set(at: cursor, to: Region(at: cursor, routes: routes, withOrigin: origin, parent: self))
         return regions.get(at: cursor)
     }

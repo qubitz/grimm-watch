@@ -20,15 +20,12 @@ class Entity: Codable {
     }
     
     func move(in direction: Direction) {
-        switch direction {
-        case .down:
-            location.area += (0, 0, -1)
-        default:
-            break
-        }
+        var destination = self.location
+        destination.area += direction.unitVec
+        move(to: destination)
     }
     
     func move(to destination: WorldLocation) {
-        location = destination
+        area.move(self, to: destination)
     }
 }
