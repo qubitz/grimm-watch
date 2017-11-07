@@ -10,7 +10,7 @@ import WatchKit
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
     
-    let storyController = GrimmStoryController.sharedInstance
+//    let playerController = PlayerController()
     
     func applicationDidFinishLaunching() {
         

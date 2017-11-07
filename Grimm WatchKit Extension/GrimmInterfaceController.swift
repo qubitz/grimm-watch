@@ -9,21 +9,19 @@
 import WatchKit
 import Foundation
 
-struct Expression {
+struct Expression: Codable {
+    enum SpeechSource: String, Codable {
+        case narrator, you, them
+    }
+    
     let source: SpeechSource
     let speech: String
 }
 
-func ==(lhs: Expression?, rhs: Expression?) -> Bool {
-    return lhs?.source == rhs?.source && lhs?.speech == rhs?.speech
-}
-
-func !=(lhs: Expression?, rhs: Expression?) -> Bool {
-    return !(lhs == rhs)
-}
-
-enum SpeechSource {
-    case narrator, you, them
+protocol GrimmActionDelegate {
+    func onAction(_ selection: Action, sender: GrimmInterfaceController)
+    func onViewItems(sender: GrimmInterfaceController)
+    func onGameStart(sender: GrimmInterfaceController)
 }
 
 /**
@@ -41,12 +39,10 @@ class GrimmInterfaceController: WKInterfaceController {
     @IBOutlet var eventTable: WKInterfaceTable!
     @IBOutlet var actionTable: WKInterfaceTable!
     
-    // External members
-    var grimmStory: GrimmStoryController!
-    
     // UI Data
-    private(set) var eventHistory: [Expression]!
-    var actions: [String]! {
+    private(set) var eventHistory: [Expression]!  // only get allowed publicly
+    
+    var actions: [Action]! {  // observer does the work
         didSet(oldActions) {
             if actions.count > actionLimit {
                 actions = oldActions  // revert
@@ -57,45 +53,45 @@ class GrimmInterfaceController: WKInterfaceController {
         }
     }
     
-    // Functions //
+    // Variables
+    var delegate: GrimmActionDelegate?
+    
+    // Functions
     
     override init() {
-        let sampleEvents = [Expression(source: .narrator, speech: "The character walked up to this guy"),
-                            Expression(source: .them, speech: "Hi there!"),
-                            Expression(source: .you, speech: "Hey! How you doing!"),
-                            Expression(source: .them, speech: "Doing great, how bout you?"),
-                            Expression(source: .narrator, speech: "The character walked away"),
-                            Expression(source: .narrator, speech: "An awkward silence followed...")]
+        super.init()
         
-        eventHistory = sampleEvents
-        actions = ["Throw rock", "Keep Walking", "Stop", "Run"]
+        // Start blank
+        eventHistory = []
+        actions = []
     }
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
+        delegate = PlayerController()
         loadEventTable()
         loadActionTable()
+        delegate?.onGameStart(sender: self)
     }
     
     override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
         super.table(table, didSelectRowAt: rowIndex)
         
         if table == actionTable {
-//            deliverEvent(withExpression: Expression(source: .narrator,
-//                                                    speech: actions[rowIndex]))
+            delegate?.onAction(actions[rowIndex], sender: self)
             eventTable.scrollToRow(at: eventTable.numberOfRows - 1)
-            GrimmStoryController.sharedInstance.notifyActionSelect(of: actions[rowIndex],
-                                                                   sender: self)
         }
-        
+    }
+    
+    override func interfaceOffsetDidScrollToTop() {
+        // Do event loading here
     }
     
     override func contextForSegue(withIdentifier segueIdentifier: String) -> Any? {
         if segueIdentifier == "ToItems" {
             return ["Small dagger", "Leather belt", "Pocket lint"]
         }
-        
         return nil
     }
     
@@ -115,19 +111,20 @@ class GrimmInterfaceController: WKInterfaceController {
         // Populate actionTable
         for (index, action) in actions.enumerated() {
             let row = actionTable.rowController(at: index) as! ActionRow
-            row.actionLabel.setText(action)
+            row.actionLabel.setText(action.name)
         }
     }
     
-    func deliverEvent(withExpression expr: Expression) {
-        eventHistory.append(expr)
+    func deliverEvent(_ speech: String, from source: Expression.SpeechSource) {
+        let newEvent = Expression(source: source, speech: speech)
+        eventHistory.append(newEvent)
         
         eventTable.insertRows(at: [eventTable.numberOfRows], withRowType: "Event")
         let row = eventTable.rowController(at: eventTable.numberOfRows - 1) as! EventRow
-        row.tailorRow(forExpressionOf: expr)
+        row.tailorRow(forExpressionOf: newEvent)
     }
     
-    func offerAvailActions(_ actions: [String]) {
+    func offerAvail(actions: [Action]) {
         self.actions = actions  // observer takes care of the rest
     }
 }

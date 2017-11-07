@@ -25,6 +25,10 @@
 		EA189BDE1F985D6B00DC7E76 /* GrimmStoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA189BDD1F985D6B00DC7E76 /* GrimmStoryController.swift */; };
 		EA1B11231F8F1E1C00F93024 /* ItemInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1B11221F8F1E1C00F93024 /* ItemInterfaceController.swift */; };
 		EA1B11251F8F54B000F93024 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1B11241F8F54B000F93024 /* ItemRow.swift */; };
+		EA92D47C1FA3C578009C3677 /* MapHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA92D47B1FA3C578009C3677 /* MapHandler.swift */; };
+		EA92D47E1FA3CF1D009C3677 /* MapBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA92D47D1FA3CF1D009C3677 /* MapBuilder.swift */; };
+		EAC038FB1FA6538500B1FC7D /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC038FA1FA6538500B1FC7D /* PlayerController.swift */; };
+		EAC038FF1FAAE5B100B1FC7D /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC038FE1FAAE5B100B1FC7D /* Action.swift */; };
 		EADD6BE91F9D4C8E0064A634 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADD6BE81F9D4C8E0064A634 /* Map.swift */; };
 		EADD6BEB1F9D4D820064A634 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADD6BEA1F9D4D820064A634 /* Region.swift */; };
 		EADD6BED1F9D6DDD0064A634 /* Grid3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADD6BEC1F9D6DDD0064A634 /* Grid3D.swift */; };
@@ -99,6 +103,10 @@
 		EA189BDD1F985D6B00DC7E76 /* GrimmStoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrimmStoryController.swift; sourceTree = "<group>"; };
 		EA1B11221F8F1E1C00F93024 /* ItemInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInterfaceController.swift; sourceTree = "<group>"; };
 		EA1B11241F8F54B000F93024 /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
+		EA92D47B1FA3C578009C3677 /* MapHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapHandler.swift; sourceTree = "<group>"; };
+		EA92D47D1FA3CF1D009C3677 /* MapBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBuilder.swift; sourceTree = "<group>"; };
+		EAC038FA1FA6538500B1FC7D /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
+		EAC038FE1FAAE5B100B1FC7D /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		EADD6BE81F9D4C8E0064A634 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		EADD6BEA1F9D4D820064A634 /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		EADD6BEC1F9D6DDD0064A634 /* Grid3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid3D.swift; sourceTree = "<group>"; };
@@ -172,16 +180,20 @@
 			isa = PBXGroup;
 			children = (
 				EA09BB381F7A310100C4C7A6 /* GrimmInterfaceController.swift */,
+				EAC038FA1FA6538500B1FC7D /* PlayerController.swift */,
 				EA1B11221F8F1E1C00F93024 /* ItemInterfaceController.swift */,
 				EA189BDD1F985D6B00DC7E76 /* GrimmStoryController.swift */,
 				EA09BB531F7A553700C4C7A6 /* EventRow.swift */,
 				EA189BDB1F9847C700DC7E76 /* ActionRow.swift */,
+				EAC038FE1FAAE5B100B1FC7D /* Action.swift */,
 				EA1B11241F8F54B000F93024 /* ItemRow.swift */,
 				EA09BB3A1F7A310100C4C7A6 /* ExtensionDelegate.swift */,
 				EA09BB3C1F7A310100C4C7A6 /* NotificationController.swift */,
 				EA09BB3E1F7A310100C4C7A6 /* Assets.xcassets */,
 				EA09BB401F7A310100C4C7A6 /* Info.plist */,
 				EA09BB411F7A310100C4C7A6 /* PushNotificationPayload.apns */,
+				EA92D47B1FA3C578009C3677 /* MapHandler.swift */,
+				EA92D47D1FA3CF1D009C3677 /* MapBuilder.swift */,
 				EADD6BE81F9D4C8E0064A634 /* Map.swift */,
 				EADD6BEA1F9D4D820064A634 /* Region.swift */,
 				EADD6BEE1F9D70410064A634 /* Area.swift */,
@@ -336,7 +348,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA92D47E1FA3CF1D009C3677 /* MapBuilder.swift in Sources */,
+				EAC038FF1FAAE5B100B1FC7D /* Action.swift in Sources */,
 				EA09BB3D1F7A310100C4C7A6 /* NotificationController.swift in Sources */,
+				EA92D47C1FA3C578009C3677 /* MapHandler.swift in Sources */,
 				EA1B11251F8F54B000F93024 /* ItemRow.swift in Sources */,
 				EADD6BF31F9F29170064A634 /* Entity.swift in Sources */,
 				EA1B11231F8F1E1C00F93024 /* ItemInterfaceController.swift in Sources */,
@@ -349,6 +364,7 @@
 				EA189BDE1F985D6B00DC7E76 /* GrimmStoryController.swift in Sources */,
 				EADD6BE91F9D4C8E0064A634 /* Map.swift in Sources */,
 				EADD6BEF1F9D70410064A634 /* Area.swift in Sources */,
+				EAC038FB1FA6538500B1FC7D /* PlayerController.swift in Sources */,
 				EA09BB541F7A553700C4C7A6 /* EventRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

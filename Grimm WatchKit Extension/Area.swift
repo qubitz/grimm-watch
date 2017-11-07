@@ -8,21 +8,28 @@
 
 import Foundation
 
-class Area: Codable {
+class Area: Codable, CustomStringConvertible {
     var description: String
+    var location: WorldLocation
+    var region: Region
     var inventory = [Item]()
-    var routes: [Direction]
+    var routes: [Direction]  // TODO: make routes private and walls computed value
+    var entites = [Entity]()
     
-    init(withItems items: [Item], andDesc desc: String, routes: [Direction] = Direction.all) {
-        for (index, item) in items.enumerated() {
-            inventory[index] = item
-        }
-        
-        description = desc
+    init(at location: WorldLocation, withItems items: [Item], andDesc desc: String, routes: [Direction] = Direction.all, parent: Region) {
+        self.location = location
+        self.description = desc
+        self.inventory = items
         self.routes = routes
+        self.region = parent
     }
     
     func areasAvail() -> [Direction] {
         return Direction.invert(routes)
+    }
+    
+    func addEntity(with items: [Item]) -> Entity {
+        entites.append(Entity(at: self.location, with: items, parent: self))
+        return entites.last!
     }
 }

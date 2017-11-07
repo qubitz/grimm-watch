@@ -9,12 +9,12 @@
 import Foundation
 
 class MapHandler {
-    static let sharedInstance = MapHandler()
+    static let shared = MapHandler()
     
     var map: Map
+    var player: Entity
     
     init() {
-        let builder = MapBuilder()
-        map = builder.buildNew()
+        (map, player) = MapBuilder.buildNew()
     }
 }

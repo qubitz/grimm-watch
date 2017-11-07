@@ -9,21 +9,19 @@
 import Foundation
 
 struct MapBuilder {
-    func buildNew() -> Map {
+    static func buildNew() -> (Map, Entity) {
         
-        let treeHouseUp = Area(withItems: [Item("Small dagger")],
-                             andDesc: "Ah...home sweet treehouse",
-                             routes: [.down])
-        let treeHouseDown = Area(withItems: [Item("Key")],
-                                 andDesc: "A tree has a ladder nail into it",
-                                 routes: [.up])
-        let mainRegion = Region()
-        mainRegion.areas.set(at: Point(5, 5, 5), to: treeHouseUp)
-        mainRegion.areas.set(at: Point(5, 5, 4), to: treeHouseDown)
+        let map = Map(withOrigin: (5, 5, 5))
+        let mainRegion = map.makeRegion(nil, withOrigin: (50, 51, 50))
         
-        let map = Map()
-        map.regions.set(at: Point(1, 1, 1), to: mainRegion)
+        mainRegion.makeArea(nil, withItems: [Item("Small dagger")],
+                            andDesc: "Ah...home sweet treehouse",
+                            routes: [.down])
+        let aedan = mainRegion.workingArea.addEntity(with: [Item("Pocket lint")])
+        mainRegion.makeArea(.down, withItems: [Item("Key")],
+                            andDesc: "A tree has a ladder nailed into it",
+                            routes: [.up])
         
-        return map
+        return (map, aedan)
     }
 }

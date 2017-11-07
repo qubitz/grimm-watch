@@ -9,7 +9,12 @@
 import Foundation
 
 class Map: Codable {
-    let regions = Grid3D<Region>()
+    let regions = Grid3D<Region>(withSize: Vec3(10, 10, 10))
+    var cursor: Vec3
+    
+    init(withOrigin origin: Point) {
+        cursor = Vec3(origin)
+    }
     
     func areasAvail(near location: WorldLocation) -> [Direction]{
         return region(of: location).areasAvail(near: location)
@@ -25,5 +30,11 @@ class Map: Codable {
     
     func region(of location: WorldLocation) -> Region {
         return regions.get(at: location.region)
+    }
+    
+    func makeRegion(_ spawnDirection: Direction?, withOrigin origin: Point, routes: [Direction] = Direction.all) -> Region {
+        cursor = (spawnDirection != nil) ? cursor : cursor + spawnDirection!.raw
+        regions.set(at: cursor, to: Region(at: cursor, routes: routes, withOrigin: origin, parent: self))
+        return regions.get(at: cursor)
     }
 }

@@ -7,3 +7,52 @@
 //
 
 import Foundation
+import WatchKit
+
+class PlayerController: GrimmActionDelegate {
+    let player = MapHandler.shared.player
+    let map = MapHandler.shared.map
+    
+    func onAction(_ selection: Action, sender: GrimmInterfaceController) {
+        switch selection {
+        case is Movement:
+            handle(movement: selection as! Movement)
+            
+            sender.deliverEvent(selection.completedName, from: .narrator)
+            sender.deliverEvent(map.area(of: player.location).description, from: .narrator)
+            sender.actions = getAvailActions()
+        default:
+            break
+        }
+    }
+    
+    func onViewItems(sender: GrimmInterfaceController) {
+        
+    }
+    
+    func onGameStart(sender: GrimmInterfaceController) {
+        sender.deliverEvent("Let me tell you the story of the child named Aedan...", from: .narrator)
+        sender.deliverEvent(map.area(of: player.location).description, from: .narrator)
+        sender.actions = getAvailActions()
+    }
+    
+    func handle(movement: Movement) {
+        if let dir = movement.direction {
+            player.move(in: dir)
+        }
+        if let place = movement.destination {
+            player.move(to: place)
+        }
+    }
+    
+    func getAvailActions() -> [Action] {
+        // Movement actions
+        var availActions = [Action]()
+        for route in player.area.routes {
+            availActions.append(Movement(in: route))
+        }
+        
+        // Combine
+        return availActions
+    }
+}
