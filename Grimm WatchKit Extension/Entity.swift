@@ -28,4 +28,14 @@ class Entity: Codable {
     func move(to destination: WorldLocation) {
         area.move(self, to: destination)
     }
+    
+    func pickupItem(at index: Int) {
+        self.inventory.append(area.inventory[index])
+        area.inventory.remove(at: index)
+    }
+    
+    func dropItem(at index: Int) {
+        area.inventory.append(self.inventory[index])
+        self.inventory.remove(at: index)
+    }
 }

@@ -39,7 +39,8 @@ class PlayerController: GrimmActionDelegate {
     
     func onItemView(controllerName: String, sender: GrimmInterfaceController) {
         sender.pushController(withName: controllerName, context: (playerItems: player.inventory,
-                                                                  groundItems: player.area.inventory))
+                                                                  groundItems: player.area.inventory,
+                                                                  player: player))
     }
     
     func handle(movement: Movement) {

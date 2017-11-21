@@ -86,7 +86,7 @@ class GrimmInterfaceController: WKInterfaceController {
     override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
         super.table(table, didSelectRowAt: rowIndex)
         
-        if table == actionTable {
+        if table === actionTable {
             delegate?.onAction(actions[rowIndex], sender: self)
             eventTable.scrollToRow(at: eventTable.numberOfRows - 1)
         }

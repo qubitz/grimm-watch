@@ -11,4 +11,6 @@ import WatchKit
 class ItemRow: NSObject {
 
     @IBOutlet var itemLabel: WKInterfaceLabel!
+    
+    var item: Item?
 }
