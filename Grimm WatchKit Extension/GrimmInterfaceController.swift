@@ -22,6 +22,11 @@ protocol GrimmActionDelegate {
     func onAction(_ selection: Action, sender: GrimmInterfaceController)
     func onViewItems(sender: GrimmInterfaceController)
     func onGameStart(sender: GrimmInterfaceController)
+    func onItemView(controllerName: String, sender: GrimmInterfaceController)
+}
+
+protocol Identifiable {
+    static var identity: String { get set }
 }
 
 /**
@@ -38,6 +43,9 @@ class GrimmInterfaceController: WKInterfaceController {
     // Outlets
     @IBOutlet var eventTable: WKInterfaceTable!
     @IBOutlet var actionTable: WKInterfaceTable!
+    @IBAction func onItemPress() {
+        delegate?.onItemView(controllerName: "ItemInterfaceController", sender: self)
+    }
     
     // UI Data
     private(set) var eventHistory: [Expression]!  // only get allowed publicly
@@ -56,7 +64,7 @@ class GrimmInterfaceController: WKInterfaceController {
     // Variables
     var delegate: GrimmActionDelegate?
     
-    // Functions
+    // Functions //////////////
     
     override init() {
         super.init()
@@ -88,26 +96,19 @@ class GrimmInterfaceController: WKInterfaceController {
         // Do event loading here
     }
     
-    override func contextForSegue(withIdentifier segueIdentifier: String) -> Any? {
-        if segueIdentifier == "ToItems" {
-            return ["Small dagger", "Leather belt", "Pocket lint"]
-        }
-        return nil
-    }
-    
     func loadEventTable() {
         eventTable.setNumberOfRows(eventHistory.count, withRowType: "Event")
-        
+
         // Populate eventTable
         for (index, event) in eventHistory.enumerated() {
             let row = eventTable.rowController(at: index) as! EventRow
             row.tailorRow(forExpressionOf: event)
         }
     }
-    
+
     func loadActionTable() {
         actionTable.setNumberOfRows(actions.count, withRowType: "Action")
-        
+
         // Populate actionTable
         for (index, action) in actions.enumerated() {
             let row = actionTable.rowController(at: index) as! ActionRow

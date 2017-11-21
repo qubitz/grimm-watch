@@ -9,20 +9,25 @@
 import WatchKit
 import Foundation
 
-
 class ItemInterfaceController: WKInterfaceController {
 
-    @IBOutlet var itemTable: WKInterfaceTable!
+    @IBOutlet var playerItemTable: WKInterfaceTable!
+    @IBOutlet var groundItemTable: WKInterfaceTable!
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        var items = context as! [String]
+        let inventories = context as! (playerItems: [Item], groundItems: [Item])
         
-        itemTable.setNumberOfRows(items.count, withRowType: "Item")
+        load(playerItemTable, with: inventories.playerItems)
+        load(groundItemTable, with: inventories.groundItems)
+    }
+    
+    func load(_ table: WKInterfaceTable, with items: [Item]) {
+        table.setNumberOfRows(items.count, withRowType: "Item")
         
         for index in 0..<items.count {
-            let row = itemTable.rowController(at: index) as! ItemRow
-            row.itemLabel.setText(items[index])
+            let row = table.rowController(at: index) as! ItemRow
+            row.itemLabel.setText(items[index].name)
         }
     }
 }

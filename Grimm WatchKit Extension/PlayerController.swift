@@ -31,9 +31,15 @@ class PlayerController: GrimmActionDelegate {
     }
     
     func onGameStart(sender: GrimmInterfaceController) {
-        sender.deliverEvent("Let me tell you the story of the child named Aedan...", from: .narrator)
+        sender.deliverEvent("Let me tell you the story of the child named Aedan...",
+                            from: .narrator)
         sender.deliverEvent(player.area.description, from: .narrator)
         sender.actions = getAvailActions()
+    }
+    
+    func onItemView(controllerName: String, sender: GrimmInterfaceController) {
+        sender.pushController(withName: controllerName, context: (playerItems: player.inventory,
+                                                                  groundItems: player.area.inventory))
     }
     
     func handle(movement: Movement) {

@@ -9,7 +9,9 @@
 import WatchKit
 
 class EventRow: NSObject {
-
+    
+    static var identity = "Event"
+    
     // Row colors
     let dialogueColor  = #colorLiteral(red: 0.4745098039, green: 0.3921568627, blue: 0, alpha: 1)
     let responseColor  = #colorLiteral(red: 1, green: 0.5764705882, blue: 0, alpha: 1)

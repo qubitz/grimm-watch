@@ -9,5 +9,8 @@
 import WatchKit
 
 class ActionRow: NSObject {
+    
+    static var identity = "Action"
+    
     @IBOutlet var actionLabel: WKInterfaceLabel!
 }

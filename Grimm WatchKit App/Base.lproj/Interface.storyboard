@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13196" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13529" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13507"/>
     </dependencies>
     <scenes>
         <!--Grimm Interface Controller-->
@@ -35,7 +35,7 @@
                                 <button width="0.5" alignment="left" verticalAlignment="center" title="Items" id="8ia-Yq-oAk">
                                     <color key="backgroundColor" red="1" green="0.57647058823529407" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <connections>
-                                        <segue destination="esl-1Z-ReU" kind="push" identifier="ToItems" id="639-IG-Rcl"/>
+                                        <action selector="onItemPress" destination="AgC-eL-Hgc" id="4Sz-cs-NoU"/>
                                     </connections>
                                 </button>
                                 <button width="0.5" alignment="left" verticalAlignment="center" title="Stats" id="uML-sp-GrQ">
@@ -71,7 +71,8 @@
             <objects>
                 <controller identifier="ItemInterfaceController" title="Items" fullScreen="YES" id="esl-1Z-ReU" userLabel="Item Interface Controller" customClass="ItemInterfaceController" customModule="Grimm_WatchKit_Extension">
                     <items>
-                        <table alignment="left" id="rSM-0D-Yt8" userLabel="Item Table">
+                        <label alignment="left" text="Aedan's:" id="c0U-MY-FwL"/>
+                        <table alignment="left" id="rSM-0D-Yt8" userLabel="Player Inventory">
                             <items>
                                 <tableRow identifier="Item" id="QlG-Ky-jL6" userLabel="Item Row" customClass="ItemRow" customModule="Grimm_WatchKit_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="AJv-Z5-ZXy">
@@ -80,7 +81,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </label>
                                         </items>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </group>
                                     <connections>
                                         <outlet property="itemLabel" destination="9Ab-a1-yVh" id="wP8-nJ-htv"/>
@@ -88,9 +89,29 @@
                                 </tableRow>
                             </items>
                         </table>
+                        <separator alignment="left" id="ovw-KO-x2w"/>
+                        <label alignment="left" text="Nearby:" id="0LY-tN-FWH"/>
+                        <table alignment="left" id="cfh-Ay-gsj" userLabel="Ground Inventory">
+                            <items>
+                                <tableRow identifier="Item" id="zHf-xr-jTb" userLabel="Item Row" customClass="ItemRow" customModule="Grimm_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="xcZ-rj-TWu">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Sample item" textAlignment="center" numberOfLines="0" id="gsy-dj-V2N">
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="itemLabel" destination="gsy-dj-V2N" id="kmj-CE-7YO"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
                     </items>
                     <connections>
-                        <outlet property="itemTable" destination="rSM-0D-Yt8" id="FBo-ci-tTu"/>
+                        <outlet property="groundItemTable" destination="cfh-Ay-gsj" id="yeE-KN-0OE"/>
+                        <outlet property="playerItemTable" destination="rSM-0D-Yt8" id="6Jw-EW-8U9"/>
                     </connections>
                 </controller>
             </objects>
@@ -120,4 +141,5 @@
             <point key="canvasLocation" x="501" y="1059"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
