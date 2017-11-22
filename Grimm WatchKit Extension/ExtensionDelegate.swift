@@ -10,8 +10,6 @@ import WatchKit
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
     
-//    let playerController = PlayerController()
-    
     func applicationDidFinishLaunching() {
         
     }
