@@ -9,15 +9,6 @@
 import WatchKit
 import Foundation
 
-struct Expression: Codable {
-    enum SpeechSource: String, Codable {
-        case narrator, you, them
-    }
-    
-    let source: SpeechSource
-    let speech: String
-}
-
 protocol GrimmActionDelegate {
     func onAction(_ selection: Action, sender: GrimmInterfaceController)
     func onViewItems(sender: GrimmInterfaceController)
