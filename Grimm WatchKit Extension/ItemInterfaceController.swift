@@ -44,8 +44,8 @@ class ItemInterfaceController: WKInterfaceController {
         row.item = item
     }
     
-    private func swapItems(from giver: WKInterfaceTable, at index: Int,
-                           to taker: WKInterfaceTable) {
+    private func swapItems(from giver: WKInterfaceTable, to taker: WKInterfaceTable,
+                           at index: Int) {
         let row = giver.rowController(at: index) as! ItemRow
         insert(row.item!, into: taker)
         giver.removeRows(at: [index])
@@ -56,10 +56,10 @@ class ItemInterfaceController: WKInterfaceController {
         switch table {
         case _ where table === playerItemTable:
             player!.dropItem(at: rowIndex)
-            swapItems(from: playerItemTable, at: rowIndex, to: groundItemTable)
+            swapItems(from: playerItemTable, to: groundItemTable, at: rowIndex)
         case _ where table === groundItemTable:
             player!.pickupItem(at: rowIndex)
-            swapItems(from: groundItemTable, at: rowIndex, to: playerItemTable)
+            swapItems(from: groundItemTable, to: playerItemTable, at: rowIndex)
         default:
             // Ignore
             break

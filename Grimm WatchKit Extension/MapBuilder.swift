@@ -10,7 +10,6 @@ import Foundation
 
 struct MapBuilder {
     static func buildNew() -> (Map, Entity) {
-        
         let map = Map(withOrigin: (5, 5, 5))
         let mainRegion = map.makeRegion(nil, withOrigin: (50, 50, 51))
         
@@ -39,7 +38,6 @@ struct MapBuilder {
         
         mainRegion.makeArea(.north, andDesc: "The street's shop density lowers before heading through the forest",
                             routes: [.south])
-        
         
         return (map, aedan)
     }
