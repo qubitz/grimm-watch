@@ -9,10 +9,25 @@
 import Foundation
 
 enum Direction: String, Codable {
-    case north, south, east, west, up, down
-    
+    case north
+    case south
+    case east
+    case west
+    case up
+    case down
+
+    struct Info: Codable {
+        var name: String
+        var desc: String
+
+        init(name: String, desc: String) {
+            self.name = name
+            self.desc = desc
+        }
+    }
+
     static let all = [Direction.north, .east, .south, .west, .up, .down]
-    
+
     var unitVec: Vec3 {
         switch self {
         case .north:
@@ -29,10 +44,10 @@ enum Direction: String, Codable {
             return Vec3.down
         }
     }
-    
+
     static func invert(_ directions: [Direction]) -> [Direction] {
         var inverted = all
-        
+
         for dir in directions {
             if let index = inverted.index(of: dir) {
                 inverted.remove(at: index)
@@ -41,3 +56,4 @@ enum Direction: String, Codable {
         return inverted  // basically all - 'directions'
     }
 }
+

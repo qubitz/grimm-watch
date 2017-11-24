@@ -38,6 +38,7 @@
 		EAF46AC91FC523DC00600EDB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF46AC81FC523DC00600EDB /* Item.swift */; };
 		EAF46ACB1FC5240E00600EDB /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF46ACA1FC5240E00600EDB /* Direction.swift */; };
 		EAF46AD31FC5298F00600EDB /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF46AD21FC5298F00600EDB /* Expression.swift */; };
+		EAF46AD51FC8073E00600EDB /* Movement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF46AD41FC8073D00600EDB /* Movement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,7 @@
 		EAF46AC81FC523DC00600EDB /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		EAF46ACA1FC5240E00600EDB /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		EAF46AD21FC5298F00600EDB /* Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
+		EAF46AD41FC8073D00600EDB /* Movement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,17 +202,10 @@
 		EAF46ACC1FC5262700600EDB /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				EADD6BE81F9D4C8E0064A634 /* Map.swift */,
-				EADD6BEA1F9D4D820064A634 /* Region.swift */,
-				EADD6BEE1F9D70410064A634 /* Area.swift */,
-				EADD6BF21F9F29170064A634 /* Entity.swift */,
-				EAF46AC81FC523DC00600EDB /* Item.swift */,
-				EAF46AD21FC5298F00600EDB /* Expression.swift */,
-				EAC038FE1FAAE5B100B1FC7D /* Action.swift */,
-				EAF46AC61FC5239E00600EDB /* Vec3.swift */,
-				EAF46ACA1FC5240E00600EDB /* Direction.swift */,
-				EADD6BF01F9F05CF0064A634 /* WorldLocation.swift */,
-				EADD6BEC1F9D6DDD0064A634 /* Grid3D.swift */,
+				EAF46AD61FC8075600600EDB /* Data Structures */,
+				EAF46AD81FC807EB00600EDB /* Objects */,
+				EAF46AD71FC8078900600EDB /* Utilities */,
+				EAF46ADA1FC8082A00600EDB /* Results */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -243,6 +238,46 @@
 				EA92D47D1FA3CF1D009C3677 /* MapBuilder.swift */,
 			);
 			path = Others;
+			sourceTree = "<group>";
+		};
+		EAF46AD61FC8075600600EDB /* Data Structures */ = {
+			isa = PBXGroup;
+			children = (
+				EADD6BE81F9D4C8E0064A634 /* Map.swift */,
+				EADD6BEA1F9D4D820064A634 /* Region.swift */,
+				EADD6BEE1F9D70410064A634 /* Area.swift */,
+			);
+			path = "Data Structures";
+			sourceTree = "<group>";
+		};
+		EAF46AD71FC8078900600EDB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EADD6BEC1F9D6DDD0064A634 /* Grid3D.swift */,
+				EADD6BF01F9F05CF0064A634 /* WorldLocation.swift */,
+				EAF46AC61FC5239E00600EDB /* Vec3.swift */,
+				EAF46ACA1FC5240E00600EDB /* Direction.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EAF46AD81FC807EB00600EDB /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				EADD6BF21F9F29170064A634 /* Entity.swift */,
+				EAF46AC81FC523DC00600EDB /* Item.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		EAF46ADA1FC8082A00600EDB /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				EAC038FE1FAAE5B100B1FC7D /* Action.swift */,
+				EAF46AD41FC8073D00600EDB /* Movement.swift */,
+				EAF46AD21FC5298F00600EDB /* Expression.swift */,
+			);
+			path = Results;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,6 +424,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAF46AD51FC8073E00600EDB /* Movement.swift in Sources */,
 				EA92D47E1FA3CF1D009C3677 /* MapBuilder.swift in Sources */,
 				EAC038FF1FAAE5B100B1FC7D /* Action.swift in Sources */,
 				EA09BB3D1F7A310100C4C7A6 /* NotificationController.swift in Sources */,
