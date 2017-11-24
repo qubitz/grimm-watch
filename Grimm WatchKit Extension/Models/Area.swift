@@ -9,30 +9,53 @@
 import Foundation
 
 class Area: Codable, CustomStringConvertible {
-    var description: String
+    
     var location: WorldLocation
     var region: Region
+    var description = "Undescribable"
     var inventory = [Item]()
-    var routes: [Direction]  // TODO: make routes private and walls computed value
+    var routes = Direction.all
     var entites = [Entity]()
     
-    init(at location: WorldLocation, withItems items: [Item] = [], andDesc desc: String, routes: [Direction] = Direction.all, parent: Region) {
+    var walls: [Direction] {
+        return Direction.invert(routes)
+    }
+    
+    init(at location: WorldLocation, parent: Region) {
         self.location = location
-        self.description = desc
-        self.inventory = items
-        self.routes = routes
         self.region = parent
     }
     
-    func addEntity(with items: [Item]) -> Entity {
-        entites.append(Entity(at: self.location, with: items, parent: self))
+    @discardableResult
+    func with(items: [Item]) -> Area {
+        self.inventory = items
+        return self
+    }
+    
+    @discardableResult
+    func with(desc: String) -> Area {
+        self.description = desc
+        return self
+    }
+    
+    @discardableResult
+    func with(routes: [Direction]) -> Area {
+        self.routes = routes
+        return self
+    }
+    
+    @discardableResult
+    func addEntity() -> Entity {
+        entites.append(Entity(at: self.location, parent: self))
         return entites.last!
     }
     
-    func add(_ entity: Entity) {
+    @discardableResult
+    func add(_ entity: Entity) -> Entity {
         entites.append(entity)
         entity.area = self
         entity.location = self.location
+        return entites.last!
     }
     
     func move(_ entity: Entity, to destination: WorldLocation) {

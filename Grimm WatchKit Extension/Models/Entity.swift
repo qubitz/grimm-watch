@@ -13,10 +13,15 @@ class Entity: Codable {
     var location: WorldLocation
     var area: Area
     
-    init(at location: WorldLocation, with items: [Item], parent: Area) {
+    init(at location: WorldLocation, parent: Area) {
         self.location = location
-        self.inventory = items
         self.area = parent
+    }
+    
+    @discardableResult
+    func with(items: [Item]) -> Entity {
+        self.inventory = items
+        return self
     }
     
     func move(in direction: Direction) {
