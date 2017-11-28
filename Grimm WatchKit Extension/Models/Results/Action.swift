@@ -8,7 +8,19 @@
 
 import Foundation
 
-protocol Action {
-    var name: String! {get set}
-    var completedName: String! {get set}
+protocol Action: Codable {
+    var name: String {get set}
+//    var pastTenseVerb: String {get set}
+    var completedName: String {get set}
+}
+
+extension Action {
+    var pastTenseVerb: String! {
+        get {
+            return completedName.components(separatedBy: " ").first!
+        }
+        set {
+            completedName = name.replacing(word: 0, separatedBy: " ", with: newValue)
+        }
+    }
 }

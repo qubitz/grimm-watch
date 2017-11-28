@@ -42,6 +42,10 @@ struct Vec3: Codable, CustomStringConvertible {
     func asPoint() -> Point {
         return (x, y, z)
     }
+    
+    func cross(_ other: Vec3) -> Vec3 {
+        return Vec3.backward
+    }
 }
 
 func +(lhs: Vec3, rhs: Vec3) -> Vec3 {

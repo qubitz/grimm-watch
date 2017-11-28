@@ -20,7 +20,7 @@ class PlayerController: GrimmActionDelegate {
             
             sender.deliverEvent(selection.completedName, from: .narrator)
             sender.deliverEvent(player.area.description, from: .narrator)
-            sender.actions = getAvailActions()
+            sender.actions = availableActions()
         default:
             break
         }
@@ -34,7 +34,7 @@ class PlayerController: GrimmActionDelegate {
         sender.deliverEvent("Let me tell you the story of the child named Aedan...",
                             from: .narrator)
         sender.deliverEvent(player.area.description, from: .narrator)
-        sender.actions = getAvailActions()
+        sender.actions = availableActions()
     }
     
     func onItemView(controllerName: String, sender: GrimmInterfaceController) {
@@ -53,13 +53,15 @@ class PlayerController: GrimmActionDelegate {
         }
     }
     
-    func getAvailActions() -> [Action] {
+    func availableActions() -> [Action] {
         var availActions = [Action]()
         
         // Movement actions
-        for route in player.area.routes {
-            availActions.append(Movement(in: route))
+        for move in player.area.moves {
+            availActions.append(move)
         }
+        
+        // TODO: Other actions may follow
         
         return availActions
     }

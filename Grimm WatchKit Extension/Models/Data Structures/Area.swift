@@ -14,11 +14,17 @@ class Area: Codable, CustomStringConvertible {
     var region: Region
     var description = "Undescribable"
     var inventory = [Item]()
-    var routes = Direction.all
+    var moves = Movement.all
     var entites = [Entity]()
     
     var walls: [Direction] {
-        return Direction.invert(routes)
+        var dirs = [Direction]()
+        for route in moves {
+            if let dir = route.direction {
+                dirs.append(dir)
+            }
+        }
+        return Direction.invert(dirs)
     }
     
     init(at location: WorldLocation, parent: Region) {
@@ -39,8 +45,8 @@ class Area: Codable, CustomStringConvertible {
     }
     
     @discardableResult
-    func with(routes: [Direction]) -> Area {
-        self.routes = routes
+    func with(moves: [Movement]) -> Area {
+        self.moves = moves
         return self
     }
     

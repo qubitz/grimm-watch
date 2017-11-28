@@ -16,7 +16,7 @@ struct MapBuilder {
         mainRegion.makeArea(nil)
             .with(items: [Item("Small dagger")])
             .with(desc: "Nailed boards makeup a treehouse")
-            .with(routes: [.down])
+            .with(moves: [Movement(.down).with(name: "Shimmy down ladder", pastVerb: "Shimmied")])
         
         let aedan = mainRegion.workingArea.addEntity()
             .with(items: [Item("Pocket lint")])
@@ -26,36 +26,41 @@ struct MapBuilder {
                           Item("Garden shovel"),
                           Item("Flower pedals")])
             .with(desc: "A tree has nailed boards with a garden near")
-            .with(routes: [.up, .west])
+            .with(moves: [Movement(.up).with(name: "Climb up ladder", pastVerb: "Climbed"),
+                          Movement(.west).with(name: "Head to town", pastVerb: "Headed")])
         
         mainRegion.makeArea(.west)
             .with(desc: "A long trail spawls ahead between home and the village")
-            .with(routes: [.up, .west])
+            .with(moves: [Movement(.east).with(name: "Walk to treehouse", pastVerb: "Walked"),
+                           Movement(.west).with(name: "Walk to town", pastVerb: "Walked")])
         
         let mainStreet = mainRegion.makeArea(.west)
             .with(items: [Item("A few pebbles")])
             .with(desc: "Traders and merchant shops line main street")
-            .with(routes: [.east, .north, .south])
+            .with(moves: [Movement(.north).with(name: "Visit north village", pastVerb: "Visited"),
+                           Movement(.south).with(name: "Visit south village", pastVerb: "Visted"),
+                           Movement(.east).with(name: "Leave town", pastVerb: "Left")])
         
         mainRegion.makeArea(.south)
             .with(desc: "Amoung the many shops lies \"Uncle Nans\" shop")
-            .with(routes: [.north, .east])
+            .with(moves: [Movement(.north).with(name: "Head back north", pastVerb: "Headed"),
+                           Movement(.east).with(name: "Go into Nan's shop", pastVerb: "Went")])
         
         mainRegion.makeArea(.east)
             .with(desc: "Inside Nans shop, groceries lay ordered by category")
-            .with(routes: [.west])
+            .with(moves: [Movement(.west).with(name: "Leave shop", pastVerb: "Left")])
         
         mainRegion.cursor = mainStreet.location.area
         
         mainRegion.makeArea(.north)
             .with(desc: "The street's shop density lowers  before heading through the forest")
-            .with(routes: [.south])
+            .with(moves: [Movement(.south).with(name: "Head back south", pastVerb: "Headed")])
         
         return (map, aedan)
     }
 }
 
-// SO MUCH CLEANER!!!! :D
+// SO UGLY!!! :D
 //        let map = Map(withOrigin: (5, 5, 5))
 //        let mainRegion = map.makeRegion(nil, withOrigin: (50, 50, 51))
 //

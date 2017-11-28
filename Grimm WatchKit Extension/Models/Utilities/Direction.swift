@@ -16,15 +16,15 @@ enum Direction: String, Codable {
     case up
     case down
 
-    struct Info: Codable {
-        var name: String
-        var desc: String
-
-        init(name: String, desc: String) {
-            self.name = name
-            self.desc = desc
-        }
-    }
+//    struct Info: Codable {
+//        var name: String
+//        var desc: String
+//
+//        init(name: String, desc: String) {
+//            self.name = name
+//            self.desc = desc
+//        }
+//    }
 
     static let all = [Direction.north, .east, .south, .west, .up, .down]
 
