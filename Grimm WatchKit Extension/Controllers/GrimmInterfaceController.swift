@@ -27,7 +27,6 @@ protocol Identifiable {
  * and interface management
  */
 class GrimmInterfaceController: WKInterfaceController {
-    
     // Constants
     let actionLimit = 10
     
@@ -112,6 +111,15 @@ class GrimmInterfaceController: WKInterfaceController {
         eventHistory.append(newEvent)
         
         eventTable.insertRows(at: [eventTable.numberOfRows], withRowType: "Event")
+        let row = eventTable.rowController(at: eventTable.numberOfRows - 1) as! EventRow
+        row.tailorRow(forExpressionOf: newEvent)
+    }
+    
+    func deliverAction(_ speech: String) {
+        let newEvent = Expression(source: .narrator, speech: speech)
+        eventHistory[eventHistory.count - 1] = newEvent
+        
+        eventTable.replaceRows(at: [eventTable.numberOfRows - 1], withRowType: "Event")
         let row = eventTable.rowController(at: eventTable.numberOfRows - 1) as! EventRow
         row.tailorRow(forExpressionOf: newEvent)
     }

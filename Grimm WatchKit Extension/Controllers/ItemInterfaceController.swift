@@ -47,8 +47,8 @@ class ItemInterfaceController: WKInterfaceController {
     private func swapItems(from giver: WKInterfaceTable, to taker: WKInterfaceTable,
                            at index: Int) {
         let row = giver.rowController(at: index) as! ItemRow
-        insert(row.item!, into: taker)
         giver.removeRows(at: [index])
+        insert(row.item!, into: taker)
     }
     
     override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {

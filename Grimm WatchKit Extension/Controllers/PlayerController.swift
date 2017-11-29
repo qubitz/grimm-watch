@@ -18,7 +18,7 @@ class PlayerController: GrimmActionDelegate {
         case is Movement:
             handle(movement: selection as! Movement)
             
-            sender.deliverEvent(selection.completedName, from: .narrator)
+            sender.deliverAction(selection.completedName)
             sender.deliverEvent(player.area.description, from: .narrator)
             sender.actions = availableActions()
         default:

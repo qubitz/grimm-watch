@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import WatchKit
 
 extension String {
     mutating public func replace(word index: Int, separatedBy seperator: String, with content: String) {
@@ -20,34 +21,11 @@ extension String {
         phrase.replace(word: index, separatedBy: seperator, with: content)
         return phrase
     }
-    
-//    func wordSubrange(of wordIndex: Int) -> Range<String.Index> {
-//        var wordStartIndex, wordEndIndex: String.Index
-//
-//        // 1. Find the space in front of the nth word
-//        if wordIndex == 0 {
-//            wordStartIndex = self.startIndex
-//        } else {
-//            wordStartIndex = index(of: " ", ordinal: wordIndex)
-//        }
-//
-//
-//        // 2. Find the space after the nthword
-//
-//
-//        return wordStartIndex..<wordEndIndex
-//    }
-//
-//    func index(of content: String, ordinal number: Int) -> String.Index? {
-//
-//
-//
-//
-////        var searchRange = self.startIndex..<self.endIndex
-////
-////        while let range = self.range(of: content, options: .caseInsensitive, range: searchRange) {
-////            searchRange = range.upperBound..<searchRange.upperBound
-////            indexes.append(range.lowerBound)
-////        }
-//    }
+}
+
+extension WKInterfaceTable {
+    public func replaceRows(at rows: IndexSet, withRowType rowType: String) {
+        removeRows(at: rows)
+        insertRows(at: rows, withRowType: rowType)
+    }
 }
