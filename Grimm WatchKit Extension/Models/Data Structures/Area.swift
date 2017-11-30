@@ -10,13 +10,25 @@ import Foundation
 
 class Area: Codable, CustomStringConvertible {
     
-    var location: WorldLocation
+    /// Parent region that contains this area.
     var region: Region
+    
+    /// Location of the area.
+    var location: WorldLocation
+    
+    /// Text description of the area.
     var description = "Undescribable"
+    
+    /// List of items held in the area.
     var inventory = [Item]()
-    var moves = Movement.all
+    
+    /// List of entities within the area.
     var entites = [Entity]()
     
+    /// Possible directions to move.
+    var moves = Movement.all
+    
+    /// Impossible directions to move.
     var walls: [Direction] {
         var dirs = [Direction]()
         for route in moves {
@@ -27,35 +39,68 @@ class Area: Codable, CustomStringConvertible {
         return Direction.invert(dirs)
     }
     
+    /// Holds and manages the details of an area
+    ///
+    /// Area is Grimm's lowest-level data structure for
+    /// holding all of its level information. Areas hold
+    /// nearly everything from entites to possible routes
+    /// an entity can move.
+    ///
+    /// - Parameters:
+    ///   - location: Location of the area within a Map
+    ///   - parent: Parent region which contains this area
     init(at location: WorldLocation, parent: Region) {
         self.location = location
         self.region = parent
     }
     
+    /// Sets the inventory held by the area
+    ///
+    /// - Note: Meant to be used in method chaining
+    /// - Parameter items: The items to set (inventory)
+    /// - Returns: self (current instance)
     @discardableResult
     func with(items: [Item]) -> Area {
         self.inventory = items
         return self
     }
     
+    /// Sets the description of the area
+    ///
+    /// - Note: Meant to be used in method chaining
+    /// - Parameter desc: Description of the area
+    /// - Returns: self (current instance)
     @discardableResult
     func with(desc: String) -> Area {
         self.description = desc
         return self
     }
     
+    
+    /// Sets the moves capable within the area
+    ///
+    /// - Note: Meant to be used in method chaining
+    /// - Parameter moves: List of possible moves
+    /// - Returns: self (current instance)
     @discardableResult
     func with(moves: [Movement]) -> Area {
         self.moves = moves
         return self
     }
     
+    /// Appends an blank entity to the area
+    ///
+    /// - Returns: The entity added
     @discardableResult
     func addEntity() -> Entity {
         entites.append(Entity(at: self.location, parent: self))
         return entites.last!
     }
     
+    /// Appends a given entity to the area
+    ///
+    /// - Parameter entity: Entity to add
+    /// - Returns: The entity added
     @discardableResult
     func add(_ entity: Entity) -> Entity {
         entites.append(entity)
@@ -64,6 +109,11 @@ class Area: Codable, CustomStringConvertible {
         return entites.last!
     }
     
+    /// Moves an entity wihin the area to a another area
+    ///
+    /// - Parameters:
+    ///   - entity: Entity to move
+    ///   - destination: Location of the area
     func move(_ entity: Entity, to destination: WorldLocation) {
         if destination != location {
             if let index = entites.index(where: { $0 === entity }) {
