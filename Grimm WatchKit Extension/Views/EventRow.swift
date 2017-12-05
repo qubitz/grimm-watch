@@ -15,7 +15,7 @@ class EventRow: NSObject {
     // Row colors
     let dialogueColor  = #colorLiteral(red: 0.4745098039, green: 0.3921568627, blue: 0, alpha: 1)
     let responseColor  = #colorLiteral(red: 1, green: 0.5764705882, blue: 0, alpha: 1)
-    let narrationColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+    let narrationColor = #colorLiteral(red: 0.092265625, green: 0.092265625, blue: 0.092265625, alpha: 1)
     
     @IBOutlet var group: WKInterfaceGroup!
     @IBOutlet var speechLabel: WKInterfaceLabel!

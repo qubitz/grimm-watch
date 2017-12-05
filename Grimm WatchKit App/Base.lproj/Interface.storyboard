@@ -14,7 +14,7 @@
             <objects>
                 <controller identifier="GrimmInterfaceController" title="Grimm" id="AgC-eL-Hgc" userLabel="Grimm Interface Controller" customClass="GrimmInterfaceController" customModule="Grimm_WatchKit_Extension">
                     <items>
-                        <table alignment="center" semanticContentAttribute="spatial" spacing="0.0" id="Zet-Kn-uR0" userLabel="Event Table">
+                        <table alignment="center" semanticContentAttribute="spatial" spacing="3" id="Zet-Kn-uR0" userLabel="Event Table">
                             <items>
                                 <tableRow identifier="Event" selectable="NO" id="sJx-7z-Dna" userLabel="Event Row" customClass="EventRow" customModule="Grimm_WatchKit_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" animationDuration="1" layout="vertical" id="0FI-6M-uEN">
