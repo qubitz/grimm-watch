@@ -8,26 +8,56 @@
 
 import Foundation
 
+/// Context holding the region and area positions of an object.
+///
+/// Used to bundle and transfer information of an object's location.
+/// For example, an `Entity`'s location within a `Map` is held by
+/// a `WorldLocation`.
 struct WorldLocation: Codable {
-    var area: Vec3
-    var region: Vec3
+    /// Three-dimensional area index of an area within a region.
+    var areaIndex: Vec3
+    /// Three-dimensional region index of a region within a map.
+    var regionIndex: Vec3
     
-    init(inRegion region: Point = (0, 0, 0), inArea area: Point = (0, 0, 0)) {
-        self.area = Vec3(area.x, area.y, area.z)
-        self.region = Vec3(region.x, region.y, region.z)
+    /// Constructs a `WorldLocation` instance with the given
+    /// region and area as `Vec3`s.
+    ///
+    /// - Parameters:
+    ///   - region: Region to hold. Defaults to (0,0,0).
+    ///   - area: Area to hold. Defaults to (0,0,0).
+    init(regionIndex: Vec3 = Vec3(0,0,0), areaIndex: Vec3 = Vec3(0,0,0)) {
+        self.regionIndex = regionIndex
+        self.areaIndex = areaIndex
     }
     
-    init(inRegion region: Vec3 = Vec3(0,0,0), inArea area: Vec3 = Vec3(0,0,0)) {
-        self.region = region
-        self.area = area
+    /// Constructs a `WorldLocation` instance with the given
+    /// region and area as `Point`s.
+    ///
+    /// - Parameters:
+    ///   - region: Region to hold (defaults to 0,0,0).
+    ///   - area: Area to hold (defaults to 0,0,0).
+    init(regionIndex: Point = (0, 0, 0), areaIndex: Point = (0, 0, 0)) {
+        self.init(regionIndex: Vec3(regionIndex), areaIndex: Vec3(areaIndex))
     }
 }
 
+/// Returns true if two `WorldLocation`s are holding the same area and region.
+///
+/// - Parameters:
+///   - lhs: `Vec3` to be equated.
+///   - rhs: `Vec3` to be equated.
+/// - Returns: True if area and region of both are equal; false otherwise.
 func ==(lhs: WorldLocation, rhs: WorldLocation) -> Bool {
-    return lhs.area == rhs.area &&
-           lhs.region == rhs.region
+    return lhs.areaIndex == rhs.areaIndex &&
+           lhs.regionIndex == rhs.regionIndex
 }
 
+/// Reterns true if two `WorldLocation`s are not holding the same area and region.
+///
+/// - Parameters:
+///   - lhs: `Vec3` to be equated.
+///   - rhs: `Vec3` to be equated.
+/// - Returns: True if area or region of both are not equal; false otherwise.
 func !=(lhs: WorldLocation, rhs: WorldLocation) -> Bool {
     return !(lhs == rhs)
 }
