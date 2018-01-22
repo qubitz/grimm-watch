@@ -8,9 +8,9 @@
 
 import WatchKit
 
+/// Table row that displays a possible action to take.
 class ActionRow: NSObject {
     
-    static var identity = "Action"
-    
+    /// Label that displays the text of the action.
     @IBOutlet var actionLabel: WKInterfaceLabel!
 }
