@@ -8,7 +8,13 @@
 
 import Foundation
 
-struct MapBuilder {
+/// Generates new maps for Grimm.
+class MapBuilder {
+    
+    /// Returns a new, pre-set map and a reference to the player within.
+    ///
+    /// - Returns: A new map that is contructed with pre-made areas and
+    ///            items.
     static func buildNew() -> (Map, Entity) {
         let map = Map()
         let mainRegion = map.makeRegion(nil)
@@ -18,6 +24,7 @@ struct MapBuilder {
             .with(desc: "Nailed boards makeup a treehouse")
             .with(moves: [Movement(.down).with(name: "Shimmy down ladder", pastVerb: "Shimmied")])
         
+        // Get player reference
         let aedan = mainRegion.workingArea.addEntity()
             .with(items: [Item("Pocket lint")])
         
@@ -32,25 +39,27 @@ struct MapBuilder {
         mainRegion.makeArea(.west)
             .with(desc: "A long trail spawls ahead between home and the village")
             .with(moves: [Movement(.east).with(name: "Walk to treehouse", pastVerb: "Walked"),
-                           Movement(.west).with(name: "Walk to town", pastVerb: "Walked")])
+                          Movement(.west).with(name: "Walk to town", pastVerb: "Walked")])
         
+        // Bookmark main street area
         let mainStreet = mainRegion.makeArea(.west)
             .with(items: [Item("A few pebbles")])
             .with(desc: "Traders and merchant shops line main street")
             .with(moves: [Movement(.north).with(name: "Visit north village", pastVerb: "Visited"),
-                           Movement(.south).with(name: "Visit south village", pastVerb: "Visted"),
-                           Movement(.east).with(name: "Leave town", pastVerb: "Left")])
+                          Movement(.south).with(name: "Visit south village", pastVerb: "Visted"),
+                          Movement(.east).with(name: "Leave town", pastVerb: "Left")])
         
         mainRegion.makeArea(.south)
             .with(desc: "Amoung the many shops lies \"Uncle Nans\" shop")
             .with(moves: [Movement(.north).with(name: "Head back north", pastVerb: "Headed"),
-                           Movement(.east).with(name: "Go into Nan's shop", pastVerb: "Went")])
+                          Movement(.east).with(name: "Go into Nan's shop", pastVerb: "Went")])
         
         mainRegion.makeArea(.east)
             .with(desc: "Inside Nans shop, groceries lay ordered by category")
             .with(moves: [Movement(.west).with(name: "Leave shop", pastVerb: "Left")])
         
-        mainRegion.cursor = mainStreet.location.area
+        // Go back to main street bookmark to build north.
+        mainRegion.cursor = mainStreet.location.areaIndex
         
         mainRegion.makeArea(.north)
             .with(desc: "The street's shop density lowers  before heading through the forest")
