@@ -26,11 +26,11 @@ class Entity: Codable {
     /// Area that contains the entity.
     var area: Area
     
-    /// Contructs an `Entity` instance
+    /// Contructs an `Entity` instance.
     ///
     /// - Parameters:
-    ///   - location: Location at which to spawn
-    ///   - parent: Area that contains the entity
+    ///   - location: Location at which to spawn.
+    ///   - parent: Area that contains the entity.
     init(at location: WorldLocation, parent: Area) {
         self.location = location
         self.area = parent
@@ -38,9 +38,9 @@ class Entity: Codable {
     
     /// Sets the inventory held by the entity.
     ///
-    /// - Note: Meant to be used in method chaining
-    /// - Parameter items: Items to be set (inventory)
-    /// - Returns: self (current instance)
+    /// - Note: Meant to be used in method chaining.
+    /// - Parameter items: Items to be set (aka inventory).
+    /// - Returns: `self` (current instance).
     @discardableResult
     func with(items: [Item]) -> Entity {
         self.inventory = items

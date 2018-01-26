@@ -8,14 +8,23 @@
 
 import Foundation
 
+/// An in-game object that can be acted upon by the player.
+///
+/// It can be picked up, dropped, damaged, and repaired.
 class Item: Codable {
     /// Name of the item.
     ///
     /// This property is displayed to the user
-    /// in the item interface.
+    /// in the item interface. Modifiy as you see
+    /// fit. It is not used internally.
     var name: String
     
     /// Health of the item.
+    ///
+    ///     var sword = Item("The Dankest Sword", 90)
+    ///     sword.health = 101
+    ///     print(sword.health)
+    ///     // Prints "100"
     ///
     /// Ranges from 0 - 100. Health value will
     /// snap to nearest valid value in not in
@@ -33,7 +42,7 @@ class Item: Codable {
     /// Contructs an `Item` instance.
     ///
     /// - Parameters:
-    ///   - name: Name of the item
+    ///   - name: Name of the item.
     ///   - health: Health of the item. Defaults
     ///             to 100. Ranges from 0 - 100.
     ///             Snaps to the nearest valid value
@@ -45,6 +54,8 @@ class Item: Codable {
     
     /// Increases the health of the item.
     ///
+    /// - Note: Allows for negative values if you're weird
+    //          like that.
     /// - Parameter amount: Amount by which to increase
     ///                     the health of the item.
     ///                     Can not over repair. Health
@@ -57,6 +68,8 @@ class Item: Codable {
     
     /// Decreases the health of the item.
     ///
+    /// - Note: Allows for negative values if you're weird
+    //          like that.
     /// - Parameter amount: Amount by which to decrease
     ///                     the health of the item.
     ///                     Can not over weaken. Health

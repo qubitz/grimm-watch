@@ -22,7 +22,7 @@ enum Direction: String, Codable, CustomStringConvertible {
     /// A list of all possible directions.
     static let all = [Direction.north, .east, .south, .west, .up, .down]
 
-    /// Description for console printing
+    /// Description for console printing.
     var description: String {
         return self.rawValue
     }

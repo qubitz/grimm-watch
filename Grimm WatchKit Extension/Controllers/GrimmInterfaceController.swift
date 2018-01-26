@@ -139,11 +139,12 @@ class GrimmInterfaceController: WKInterfaceController {
     /// Outputs action's effect text to the list of events.
     ///
     /// - Parameter speech: The action's past-tense text.
-    func deliverAction(_ speech: String) {
-        let newEvent = Expression(source: .narrator, speech: speech)
+    func deliverAction(_ action: Action) {
+        let newEvent = Expression(source: .narrator, speech: action.completedName)
+        // Replace description with completed action speech.
         eventHistory[eventHistory.count - 1] = newEvent
         
-        eventTable.replaceRows(at: [eventTable.numberOfRows - 1], withRowType: "Event")
+        eventTable.resetRows(at: [eventTable.numberOfRows - 1], withRowType: "Event")
         let row = eventTable.rowController(at: eventTable.numberOfRows - 1) as! EventRow
         row.tailorRow(forExpressionOf: newEvent)
     }

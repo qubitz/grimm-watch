@@ -55,7 +55,7 @@ extension PlayerController: GrimmEventDelegate {
         case is Movement:
             handle(movement: selection as! Movement)
             
-            sender.deliverAction(selection.completedName)
+            sender.deliverAction(selection)
             sender.deliverEvent(player.area.description, from: .narrator)
             sender.actions = availableActions()
         default:

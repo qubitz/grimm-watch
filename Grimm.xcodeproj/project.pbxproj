@@ -18,7 +18,6 @@
 		EA09BB341F7A310100C4C7A6 /* Grimm WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EA09BB331F7A310100C4C7A6 /* Grimm WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EA09BB391F7A310100C4C7A6 /* GrimmInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA09BB381F7A310100C4C7A6 /* GrimmInterfaceController.swift */; };
 		EA09BB3B1F7A310100C4C7A6 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA09BB3A1F7A310100C4C7A6 /* ExtensionDelegate.swift */; };
-		EA09BB3D1F7A310100C4C7A6 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA09BB3C1F7A310100C4C7A6 /* NotificationController.swift */; };
 		EA09BB3F1F7A310100C4C7A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA09BB3E1F7A310100C4C7A6 /* Assets.xcassets */; };
 		EA09BB541F7A553700C4C7A6 /* EventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA09BB531F7A553700C4C7A6 /* EventRow.swift */; };
 		EA189BDC1F9847C700DC7E76 /* ActionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA189BDB1F9847C700DC7E76 /* ActionRow.swift */; };
@@ -99,7 +98,6 @@
 		EA09BB331F7A310100C4C7A6 /* Grimm WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Grimm WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA09BB381F7A310100C4C7A6 /* GrimmInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrimmInterfaceController.swift; sourceTree = "<group>"; };
 		EA09BB3A1F7A310100C4C7A6 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		EA09BB3C1F7A310100C4C7A6 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		EA09BB3E1F7A310100C4C7A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA09BB401F7A310100C4C7A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA09BB411F7A310100C4C7A6 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
@@ -218,7 +216,6 @@
 				EA09BB381F7A310100C4C7A6 /* GrimmInterfaceController.swift */,
 				EAC038FA1FA6538500B1FC7D /* PlayerController.swift */,
 				EA1B11221F8F1E1C00F93024 /* ItemInterfaceController.swift */,
-				EA09BB3C1F7A310100C4C7A6 /* NotificationController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -431,7 +428,6 @@
 				EAF46AD51FC8073E00600EDB /* Movement.swift in Sources */,
 				EA92D47E1FA3CF1D009C3677 /* MapBuilder.swift in Sources */,
 				EAC038FF1FAAE5B100B1FC7D /* Action.swift in Sources */,
-				EA09BB3D1F7A310100C4C7A6 /* NotificationController.swift in Sources */,
 				EAF46ACB1FC5240E00600EDB /* Direction.swift in Sources */,
 				EA92D47C1FA3C578009C3677 /* MapHandler.swift in Sources */,
 				EAF46AD31FC5298F00600EDB /* Expression.swift in Sources */,

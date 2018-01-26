@@ -34,8 +34,8 @@ struct WorldLocation: Codable {
     /// region and area as `Point`s.
     ///
     /// - Parameters:
-    ///   - region: Region to hold (defaults to 0,0,0).
-    ///   - area: Area to hold (defaults to 0,0,0).
+    ///   - region: Region to hold. Defaults to (0,0,0).
+    ///   - area: Area to hold. Defaults to (0,0,0).
     init(regionIndex: Point = (0, 0, 0), areaIndex: Point = (0, 0, 0)) {
         self.init(regionIndex: Vec3(regionIndex), areaIndex: Vec3(areaIndex))
     }
