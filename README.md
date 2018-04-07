@@ -4,8 +4,13 @@ Grimm: Apple Watch Edition
 
 Role playing game on the Apple Watch
 
-![Screenshot](Documentation/Pictures/screenshot_1.png)
+Demo
+----
 
+[![Grimm Walkthrough Video](https://img.youtube.com/vi/tnECVDlUqVs/0.jpg)](https://youtu.be/tnECVDlUqVs)
+
+Architecture
+------------
 A brief breakdown of the architecture used to facilitate interaction:
 
 ![Architecture](Documentation/Pictures/grimm_arch.png)
